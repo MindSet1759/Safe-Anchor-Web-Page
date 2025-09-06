@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: poppins, sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    height: 100vh;
+
+}
+
+h1{
+    text-align: center;
+        color: #0B1A43;
+}
+
+p{
+    text-align: center;
+    color: #000029;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.form-image img{
+        object-fit: cover;
+    width: 100%;
+}
+
+.form-section{
+    display: none;
+}
+
+.form-section.active{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #F3FAFF;
+    
+}
+
+.anchorlogo{
+    position: absolute;
+    bottom: 80px;
+    left: 280px;
+    width: 200px;
+}
+
+.form-image{
+    position: relative;
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+}
+
+
+.form-container1{
+    padding: 5rem;
+}
+
+.form-container2{
+        width: 500px;
+    display: block;
+    background: #fff;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 350px;
+    margin: 35px;
+    border-radius: 20px;
+}
+
+.form-container2 input{
+    width: 300px;
+    font-size: 14px;
+    background: #F5F5F5;
+    border: none;
+    padding: 0.5rem;
+    outline: none;
+}
+
+.form-container2 label{
+        font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.form-container2 label{
+        font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+
+.sign-in-btn {
+    padding: 10px;
+    background-color: #3ACEFF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    width: 300px;
+    font-size: 14px;
+    border-radius: 10px;
+    font-weight: 750;
+    color: #0B1A43;
+    margin-bottom: 10px;
+}
+.register-btn {
+    font-size: 14px;
+    padding: 10px;
+    background-color: #3ACEFF;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #0B1A43;
+    cursor: pointer;
+    text-align: center;
+    width: 300px;
+}
+
+.forget-password{
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.sign-up-link{
+    cursor: pointer;
+    color: #3ACEFF;
+    font-size: 13px;
+}
+
+.sign-up{
+    font-size: 13px;
+   display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+/* Second section styling */
+
+.alternative{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: center;
+}
+
+.line-through1{
+    height: 2px;
+    width: 170px;
+    margin-right: 5px;
+    background: #3ACEFF;
+}
+
+.line-through2{
+    height: 2px;
+    width: 165px;
+    margin-left: 5px;
+    background: #3ACEFF;
+}
+
+.or{
+    color: #A0A0A0;
+    font-weight: 600;
+}
+
+.emphasis{
+    color: #000029;
+    font-weight: 500;
+}
+
+/* notification-styling */
+.notification-container, .questionnaire-container{
+    width: 500px;
+    display: block;
+    background: #fff;
+    margin: 0 auto;
+    padding: 1rem;
+    margin: 35px;
+    border-radius: 20px;
+}
+
+.notification-content, .email-content, .questionnaire-content{
+    text-align: center;
+        padding: 2rem 2rem 0px 2rem;
+}
+
+.notification-content h5{
+    color: #0B1A43;
+    font-size: 21px;
+}
+
+.notification-content p{
+    color: #585656;
+    font-size: 14px;
+}
+
+.ok-btn, .start-btn{
+    background: #3ACEFF;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.email-error{
+    font-size: 14px;
+        color: #000029;
+    text-align: center;
+    font-weight: 500;
+}
+
+.resend-email{
+    cursor: pointer;
+    color: #3ACEFF;
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.notification-image{
+        display: flex;
+    justify-content: center;
+}
+
+.notification-section{
+    display: none;
+}
+
+.notification-section.active{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #F3FAFF;
+}
+
+.error-alternative{
+    text-align: center;
+}
+
+.cancel-icon{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fa-times{
+    font-size: 20px;
+    border: 1px solid #585656;
+    border-radius: 80%;
+    color: #585656;
+padding: 4px;
+}
+
+.line{
+    height: 1px;
+    display: flex;
+    width: 398px;
+    margin: 20px auto 3px;
+    background: #ccc;
+    justify-content: center;
+}
+
+
+/* Email-section styling */
+
+    .email-content h5{
+        color: #000000;
+        font-size: 21px;
+    }
+    .email-content p{
+        color: #585656;
+        font-size: 14px;
+    }
+
+    .start-btn{
+        color: #0B1A43;
+    }
+
+    /* Questionnaire section styling */
+
+.questionnaire-header{
+    display: flex;
+    background: #3ACEFF;
+    border-radius: 20px 20px 0 0;
+}
+
+.questionnaire-header h5{
+    color: #0B1A43;
+    font-size: 17px;
+    padding: 10px;
+    font-weight: 600;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.questionnaire-content{
+        width: auto;
+    text-align: left;
+        padding: 0.7rem 1rem 2rem 2rem;
+}
+
+.questionnaire-content h5{
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.questionnaire-content label{
+    font-size: 14px;
+    color: #000029;
+    margin-left: 10px;
+}
+
+.questionnaire-content input{
+    margin-bottom: 20px;
+
+}
+
+.next-btn{
+    color: #000029;
+    background: #3ACEFF;
+    width: 325px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Responsive Media Queries */
+
+/* Medium screens (tablets, 768px - 1199px) */
+@media (max-width: 1199px) {
+    .form-section.active {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .form-image {
+        width: 300px;
+        margin-bottom: 30px;
+    }
+    
+    .anchorlogo {
+        position: static;
+        width: 150px;
+        margin: 20px auto;
+        display: block;
+    }
+    
+    .form-container1 {
+        padding: 2rem;
+    }
+    
+    .form-container2 {
+        width: 100%;
+        max-width: 400px;
+        margin: 20px auto;
+    }
+    
+    .notification-container,
+    .questionnaire-container {
+        width: 90%;
+        max-width: 450px;
+    }
+    
+    .line {
+        width: 90%;
+    }
+}
+
+/* Small screens (large phones, 480px - 767px) */
+@media (max-width: 767px) {
+    body {
+        height: auto;
+        padding: 20px;
+    }
+    
+    .form-section.active {
+        padding: 10px;
+        background: none;
+    }
+    
+    .form-image {
+        width: 250px;
+    }
+    
+    .form-container1 {
+        padding: 1rem;
+    }
+    
+    .form-container2,
+    .notification-container,
+    .questionnaire-container {
+        width: 100%;
+        margin: 15px 0;
+        padding: 1rem;
+    }
+    
+    .form-container2 input,
+    .sign-in-btn,
+    .register-btn,
+    .next-btn,
+    .ok-btn,
+    .start-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .alternative {
+        width: 100%;
+    }
+    
+    .line-through1,
+    .line-through2 {
+        width: 40%;
+    }
+    
+    .notification-section.active {
+        padding: 20px;
+    }
+    
+    .questionnaire-content {
+        padding: 0.5rem 0.5rem 1rem 1rem;
+    }
+    
+    .questionnaire-header h5 {
+        font-size: 15px;
+        padding: 0.8rem;
+    }
+}
+
+/* Extra small screens (phones, below 480px) */
+@media (max-width: 479px) {
+    h1 {
+        font-size: 24px;
+    }
+    
+    p {
+        font-size: 13px;
+    }
+    
+    .form-image {
+        width: 200px;
+    }
+    
+    .form-container2,
+    .notification-container,
+    .questionnaire-container {
+        padding: 0.8rem;
+    }
+    
+    .form-container2 input,
+    .sign-in-btn,
+    .register-btn,
+    .next-btn,
+    .ok-btn,
+    .start-btn {
+        font-size: 13px;
+        padding: 8px;
+    }
+    
+    .sign-up {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .questionnaire-content h5 {
+        font-size: 15px;
+    }
+    
+    .questionnaire-content label {
+        font-size: 13px;
+    }
+    
+    .notification-content,
+    .email-content {
+        padding: 1rem 1rem 0 1rem;
+    }
+    
+    .fa-times {
+        font-size: 16px;
+        padding: 3px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .form-section.active {
+        max-width: 1200px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    body {
+        height: 100vh;
+    }
+    
+    .form-section.active {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .form-image, .anchorlogo {
+        display: none;
+    }
+}

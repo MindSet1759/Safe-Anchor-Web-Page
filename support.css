@@ -1,0 +1,251 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+     margin: 0;
+    padding: 0;
+  /* display: flex; */
+  justify-content: space-between;
+  /* background-color: #f4f4f4; */
+  /* font-family: Arial, sans-serif; */
+    /* overflow-y: hidden; */
+    /* General styles for the body */
+
+    
+    /* margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f4f4f4; */
+
+}
+a {
+    text-decoration: none;
+}
+
+
+.header-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 10px auto 45px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #3ACEFF;
+}
+
+.input-container{
+    border: 1px solid #3ACEFF;
+    border-radius: 10px;
+    width: 240px;
+    display: flex;
+    outline: none;
+    background-color: #F3FAFF;
+    align-items: center;
+}
+
+.input-container input{
+    background: #F3FAFF;
+    padding: 10px;
+    width: 200px;
+    border: none;
+    outline: none;
+}
+
+.input-container img{
+        width: 20px;
+    margin: 0 5px;
+}
+
+.notifications{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.books-session{
+    background: #3ACEFF;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    color: #0B1A43;
+    border-radius: 10px;
+}
+
+.fa-circle-user{
+    font-size: 24px;
+}
+
+.notification-count{
+    top: 0;
+    background: red;
+    right: 0;
+    font-size: 8px;
+    padding: 3px;
+    color: white;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.fa-bell{
+        font-size: 24px;
+}
+
+/* Main-section styling */
+
+.main-section{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin: auto;
+}
+
+
+.left-sidebar{
+    padding-top: 32px;
+    background: #F3FAFF;
+    width: 250px;
+    height: 1050px;
+  /* background-color: #333; */
+  /* color: white; */
+  /* height: 100vh; */
+  /* padding: 20px; */
+  
+  left: 0;
+  /* top: 32px; */
+}
+
+
+
+/* Left section-styling */
+.nav-bar-menu{
+    display: grid;
+    align-items: center;
+    gap: 14px;
+    justify-content: center;
+}
+
+.nav-bar-menu span{
+    color: #585656;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.nav-bar-menu div{
+    display: flex;
+    align-items: center;
+}
+.menu.active {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 0.3rem;
+    width: 135px;
+}
+
+.menu.active span{
+    color: #0B1A43;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.exit-container{
+    margin-top: 230px;
+}
+
+
+
+.hotline-help{
+    display: block;
+
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+/* Base styles */
+
+
+/* If there's a sidebar, allow space */
+/* .sidebar {
+  width: 250px;
+  background-color: #333;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+} */
+
+/* Center the table container */
+.container {
+  flex-grow: 1;
+  display: inline-block; 
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+ 
+  
+}
+
+/* Table styling */
+table {
+  width: 90%;
+  border-collapse: collapse;
+  background-color: white;
+  /* table-layout: fixed; */
+   margin: 0 auto;
+   position: relative;
+   top: 70px;
+   right: 400px;
+   
+}
+
+.col1{
+    padding-right: 100px;
+}
+
+.col2{
+    padding-right: 70px;
+}
+
+/* Prevent line breaks in headers or cells */
+th, td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 12px 20px;
+  text-align: center;
+  /* border: 1px solid #ddd; */
+   margin: 0 auto;
+}
+
+tbody td:first-child{
+    padding-left: -150px;
+}
+
+tbody td:last-child{
+    padding-left: 45px;
+}
+
+/* Header styling */
+thead th {
+  background-color: #F3FAFF;
+  font-weight: bold;
+}
+
+/* Zebra striping for readability */
+/* tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+} */
+
+/* tbody tr:hover {
+  background-color: #f1f1f1;
+} */

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeAnchor Dashboard</title>
+  <link rel="stylesheet" href="settings.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+     <header class="topbar">
+        <div class="topbar-logo"><img src="Landing page Assets/SafeAnchor Logo.svg" alt="SafeAnchor"></div>
+        
+        <div class="topbar-search">
+             <img src="Landing page Assets/search-icon.png" alt="icon" class="search-icon">
+            <input type="text" placeholder="Search">
+        </div>
+        
+        
+        <div class="profile-section">
+            <div class="notifications">
+                <a href="notifications.html" class="notification-icon"><img src="Landing page Assets/notify-icon.png" alt="Notifications"></a>
+            </div>
+            <div class="profile">
+                <img src="Landing page Assets/Avatar 1.jpg" alt="Dr. Jane Doe">
+            </div>
+        </div>
+        
+      </header>
+
+  <div class="container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">      
+      <ul class="menu">
+        <li class="home"><a href="home.html"><img src="Landing page Assets/Home icon.png" alt="Home">Home</a></li>
+        <li class="patient"><a href="patient.html"><img src="Landing page Assets/Resources icon.png" alt="Patients">Patients</a></li>
+        <li class="schedules"><a href="schedules.html"><img src="Landing page Assets/Guidance.png" alt="Schedules">Schedules</a></li>
+        <li class="messages"><a href="messages.html"><img src="Landing page Assets/support icon.png" alt="Messages">Messages</a></li>
+        <li class="settings"><a href="settings.html"><img src="Landing page Assets/setting icon.png" alt="Settings">Settings</a></li>
+        <li class="help"><a href="help.html"><img src="Landing page Assets/Help icon.png" alt="Help">Help</a></li>
+      </ul>
+      <div class="quick-exit">
+        <a href="expertflow.html">          
+          <p class="quick-exit-text"><img src="Landing page Assets/exit image.png" alt="Quick Exit"><a href="index.html">Quick Exit</a> </p>
+        </a>
+      </div>
+    </aside>
+
+
+
+    <!-- Main content -->
+    <div class="main">
+    
+        <div class="content">
+            <h2>Settings</h2>
+            <p>You can find all settings here.</p>
+
+            <!-- Tabs -->
+            <div class="tabs">
+                <button class="active" data-tab="profile">Profile</button>
+                <button data-tab="security">Security</button>
+                <button data-tab="notifications">Notifications</button>
+                <button data-tab="other">Other Settings</button>
+            </div>
+
+            <!-- Profile -->
+            <div id="profile" class="tab-panel active">
+                <div class="avatar-section">
+                    <img src="Landing page Assets/Avatar 1.jpg" alt="avatar">
+                    <div class="avatar-buttons">
+                        <button class="upload">Upload new</button>
+                        <button class="remove">Remove avatar</button>
+                    </div>
+                </div>
+                <form>
+                    <div>
+                        <label>Full name</label>
+                        <input type="text" placeholder="Enter full name">
+                        <label>Professional Title</label>
+                        <input type="text" placeholder="Trauma-informed therapist, Licensed Psychologist">
+                        <label>Specialization</label>
+                        <input type="text" placeholder="Trauma recovery, and PTSD support">
+                        <label>Bio</label>
+                        <textarea>Licensed Clinical Psychologist with 8 years of experience...</textarea>
+                    </div>
+                    <div>
+                        <label>Email address</label>
+                        <input type="email" placeholder="Enter email address">
+                        <label>Gender</label>
+                        <select>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                        </select>
+                        <label>Phone number</label>
+                        <input type="tel" placeholder="Enter phone no">
+                    </div>
+                </form>
+            </div>
+
+            <!-- Security -->
+            <div id="security" class="tab-panel">
+                <h3>Password</h3>
+                <p>Protect your account from anyone trying to gain access</p>
+                <form style="grid-template-columns:1fr;">
+                    <div>
+                        <label>Current password</label>
+                        <input type="password">
+                        <label>New password</label>
+                        <input type="password">
+                        <label>Confirm password</label>
+                        <input type="password">
+                        <a href="#" style="color:red;">Forgotten Password?</a>
+                    </div>
+                </form>
+                <div class="danger">
+                    <h3>Delete my account</h3>
+                    <p>Permanently delete account and remove access from the platform</p>
+                    <button>Delete account</button>
+                </div>
+            </div>
+
+            <!-- Notifications -->
+            <div id="notifications" class="tab-panel">
+                <h3>Push Notifications</h3>
+                <div class="setting-row"><span>Replies<br><small>Get notified on replies to your messages</small></span><div class="toggle active"></div></div>
+                <div class="setting-row"><span>Reminders<br><small>Important reminders about your account activity</small></span><div class="toggle active"></div></div>
+                <div class="setting-row"><span>Updates<br><small>Real time updates on your appointments</small></span><div class="toggle active"></div></div>
+                <div class="setting-row"><span>Schedules<br><small>Get notified about your schedules and appointments</small></span><div class="toggle active"></div></div>
+
+                <h3 style="margin-top:20px;">Email Notifications</h3>
+                <div class="setting-row"><span>News and updates</span><div class="toggle active"></div></div>
+                <div class="setting-row"><span>Tips and resources</span><div class="toggle active"></div></div>
+                <div class="setting-row"><span>Updates</span><div class="toggle active"></div></div>
+                <div class="setting-row"><span>Reminders</span><div class="toggle"></div></div>
+            </div>
+
+            <!-- Other Settings -->
+            <div id="other" class="tab-panel">
+                <h3>Data</h3>
+                <div class="setting-row"><span>Access my data</span><div class="toggle active"></div></div>
+                <div class="setting-row"><span>Delete data</span><div class="toggle"></div></div>
+
+                <h3 style="margin-top:20px;">Help and Support</h3>
+                <div class="links"><a href="#">Learn more</a></div>
+
+                <h3 style="margin-top:20px;">Need something else?</h3>
+                <div class="links"><a href="#">Contact support</a><a href="#">FAQs</a></div>
+
+                <div class="danger">
+                <h3>Delete my account</h3>
+                <p>Permanently delete account and remove access from the platform</p>
+                <button>Delete account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="settings.js"></script>
+
+
+    
+  </div>
+</body>
+</html>
+

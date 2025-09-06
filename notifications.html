@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeAnchor Dashboard</title>
+  <link rel="stylesheet" href="notifications.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+     <header class="topbar">
+        <div class="topbar-logo"><img src="Landing page Assets/SafeAnchor Logo.svg" alt="SafeAnchor"></div>
+        
+        <div class="topbar-search">
+             <img src="Landing page Assets/search-icon.png" alt="icon" class="search-icon">
+            <input type="text" placeholder="Search">
+        </div>
+        
+        
+        <div class="profile-section">
+            <div class="notifications">
+                <a href="notifications.html" class="notification-icon"><img src="Landing page Assets/notify-icon.png" alt="Notifications"></a>
+            </div>
+            <div class="profile">
+                <img src="Landing page Assets/Avatar 1.jpg" alt="Dr. Jane Doe">
+            </div>
+        </div>
+        
+      </header>
+
+  <div class="container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">      
+      <ul class="menu">
+        <li class="home"><a href="home.html"><img src="Landing page Assets/Home icon.png" alt="Home">Home</a></li>
+        <li class="patient"><a href="patient.html"><img src="Landing page Assets/Resources icon.png" alt="Patients">Patients</a></li>
+        <li class="schedules"><a href="schedules.html"><img src="Landing page Assets/Guidance.png" alt="Schedules">Schedules</a></li>
+        <li class="messages"><a href="messages.html"><img src="Landing page Assets/support icon.png" alt="Messages">Messages</a></li>
+        <li class="settings"><a href="settings.html"><img src="Landing page Assets/setting icon.png" alt="Settings">Settings</a></li>
+        <li class="help"><a href="help.html"><img src="Landing page Assets/Help icon.png" alt="Help">Help</a></li>
+      </ul>
+      <div class="quick-exit">
+        <a href="expertflow.html">          
+          <p class="quick-exit-text"><img src="Landing page Assets/exit image.png" alt="Quick Exit"><a href="index.html">Quick Exit</a> </p>
+        </a>
+      </div>
+    </aside>
+
+
+
+
+    <!-- Main content -->
+    <main class="main-content">
+            <!-- Notifications list -->
+      <section class="notifications">
+        <h2>Notifications</h2>
+        <div id="notifications-list">
+          <!-- JS will populate here -->
+        </div>
+      </section>
+    </main>
+
+    <script src="notifications.js"></script>
+   
+    
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeAnchor Dashboard</title>
+  <link rel="stylesheet" href="messages.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+     <header class="topbar">
+        <div class="topbar-logo"><img src="Landing page Assets/SafeAnchor Logo.svg" alt="SafeAnchor"></div>
+        
+        <div class="topbar-search">
+             <img src="Landing page Assets/search-icon.png" alt="icon" class="search-icon">
+            <input type="text" placeholder="Search">
+        </div>
+        
+        
+        <div class="profile-section">
+            <div class="notifications">
+                <a href="notifications.html" class="notification-icon"><img src="Landing page Assets/notify-icon.png" alt="Notifications"></a>
+            </div>
+            <div class="profile">
+                <img src="Landing page Assets/Avatar 1.jpg" alt="Dr. Jane Doe">
+            </div>
+        </div>
+        
+      </header>
+
+  <div class="container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">      
+      <ul class="menu">
+        <li class="home"><a href="home.html"><img src="Landing page Assets/Home icon.png" alt="Home">Home</a></li>
+        <li class="patient"><a href="patient.html"><img src="Landing page Assets/Resources icon.png" alt="Patients">Patients</a></li>
+        <li class="schedules"><a href="schedules.html"><img src="Landing page Assets/Guidance.png" alt="Schedules">Schedules</a></li>
+        <li class="messages"><a href="messages.html"><img src="Landing page Assets/support icon.png" alt="Messages">Messages</a></li>
+        <li class="settings"><a href="settings.html"><img src="Landing page Assets/setting icon.png" alt="Settings">Settings</a></li>
+        <li class="help"><a href="help.html"><img src="Landing page Assets/Help icon.png" alt="Help">Help</a></li>
+      </ul>
+      <div class="quick-exit">
+        <a href="expertflow.html">          
+          <p class="quick-exit-text"><img src="Landing page Assets/exit image.png" alt="Quick Exit"><a href="index.html">Quick Exit</a> </p>
+        </a>
+      </div>
+    </aside>
+
+
+
+    <!-- Main content -->
+    <main class="chat-section"> 
+      <h2>Messages</h2>     
+      <div class="messages-container">
+        <!-- Chat List -->
+        <div class="chat-list">
+          <h3>Chats</h3>
+          <ul>
+            <li>
+              <img src="Landing page Assets/Avatar 1.jpg" alt="Profile-pic">
+              <div>
+                <p class="name">John Janet</p>
+                <p class="last-msg">How are you doing?</p>
+              </div>
+              <span class="time">01:20</span>
+              <span class="badge">2</span>
+            </li>
+            <li>
+              <img src="Landing page Assets/Avatar 1.jpg" alt="Profile-pic">
+              <div>
+                <p class="name">Bukola Jimoh</p>
+                <p class="last-msg">Good morning</p>
+              </div>
+              <span class="time">Yesterday</span>
+            </li>
+            <li>
+              <img src="Landing page Assets/Avatar 1.jpg" alt="Profile-pic">
+              <div>
+                <p class="name">User Name</p>
+                <p class="last-msg">I want a session.</p>
+              </div>
+              <span class="time">Thursday</span>
+            </li>
+            <li>
+              <img src="Landing page Assets/Avatar 1.jpg" alt="Profile-pic">
+              <div>
+                <p class="name">Mr Goodness</p>
+                <p class="last-msg">How are you doing?</p>
+              </div>
+              <span class="time">13:06</span>
+              <span class="badge">4</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Chat Window -->
+        <div class="chat-window">
+          <div class="chat-header">
+            <img src="Landing page Assets/Avatar 2.jpg" alt="Profile-pic">
+            <div>
+              <p class="name">Support ADMIN</p>
+              <p class="id">#CU6798H</p>
+            </div>
+            <div class="chat-actions">
+              <button>📞</button>
+              <button>📧</button>
+              <button>ℹ️</button>
+            </div>
+          </div>
+
+          <div class="chat-body">
+            <div class="msg left">
+              <span class="bubble"></span>
+              <span class="time">8:00 PM</span>
+            </div>
+            <div class="msg right">
+              <span class="bubble"></span>
+              <span class="time">8:00 PM</span>
+            </div>
+          </div>
+
+          <div class="chat-footer">
+            <input type="text" placeholder="Digite a mensagem">
+            <button class="send">➤</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  
+    
+  </div>
+</body>
+</html>
+

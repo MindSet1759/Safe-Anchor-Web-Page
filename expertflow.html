@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="expertflow.css">
+    <title>Expert Form</title>
+</head>
+<body>
+    <section class="form-section active" id="firstSection">
+       
+        <div class="form-image">
+            <img src="Landing page Assets/signin image.png" alt="Sign In Image">
+        </div>
+       
+            <img src="Landing page Assets/SafeAnchor Logo.svg" alt="Sign In Image" class="anchorlogo">
+       
+       
+        <div class="form-container1">
+
+
+        <div class="form-container2">
+        <h1>Sign In</h1>
+        <p>Sign in to your account</p>
+        <form>
+            <label for="email">Email Address</label><br>
+            <input type="text" id="email" name="email" required><br>
+           
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" required><br>
+            <span class="forget-password">Forgot password?</span>
+            <br><br>
+            <button class="sign-in-btn" id="signInBtn">Sign in</button><br>
+            <span class="sign-up">Dont have an Account? <a href="" class="sign-up-link" id="signUpLink">Sign up</a></span>
+            <!-- Fixed: Removed # from href to prevent unwanted navigation -->
+        </form>
+   
+     </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="form-section" id="secondSection">
+       
+        <div class="form-image">
+            <img src="Landing page Assets/signin image.png" alt="Sign In Image">
+        </div>
+        <img src="Landing page Assets/SafeAnchor Logo.svg" alt="Sign In Image" class="anchorlogo">
+       
+       
+       
+        <div class="form-container1">
+
+
+        <div class="form-container2">
+        <h1>Create An Account</h1>
+        <p>Create an account to use <span class="emphasis">SafeAnchor</span></p>
+        <button class="register-btn" id="registerBtn"><i class="fab fa-google"></i> Continue with Google</button>
+        <div class="alternative">
+            <span class="line-through1"></span><span class="or">OR</span><span class="line-through2"></span>
+        </div>
+        <form>
+            <label for="email">Email Address</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+
+            <label for="fullName">Full Name</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+
+            <label for="location">Location</label><br>
+            <input type="text" id="location" name="location" required><br>
+
+
+
+
+            <label for="number">Phone Number</label><br>
+            <input type="tel" id="number" name="number" required><br>
+
+
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" required><br>
+
+
+<label for="password">Confirm Password</label><br>
+<input type="password" id="password" name="password" required><br><br>
+<!-- Fixed: Changed from id="signUpBtn" to class="signUpBtn" to avoid duplicate IDs and ensure proper event listener attachment -->
+<button class="sign-in-btn signUpBtn">Sign Up</button><br>
+            <span class="sign-up">Already have an Account? <a href="#" class="sign-up-link" id="signInBtn2">Sign in</a></span>
+        </form>
+   
+     </div>
+        </div>
+    </section>
+
+
+    <section class="form-section" id="thirdSection">
+
+
+        <div class="form-image">
+            <img src="Landing page Assets/signin image.png" alt="Sign In Image">
+        </div>
+        <img src="Landing page Assets/SafeAnchor Logo.svg" alt="Sign In Image" class="anchorlogo">
+
+
+
+
+        <div class="form-container1">
+
+
+        <div class="form-container2">
+        <h1>Create An Account</h1>
+        <p>Create an account to use <span class="emphasis">SafeAnchor</span></p>
+       
+        <form>
+            <label for="username">Username</label><br>
+            <input type="text" id="username" name="username" required><br>
+
+
+            <label for="email">Email Address</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+
+            <label for="number">Phone Number</label><br>
+            <input type="tel" id="number" name="number" required><br>
+
+
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" required><br>
+
+
+<label for="password">Confirm Password</label><br>
+<input type="password" id="password" name="password" required><br><br>
+<!-- Fixed: Changed from id="signUpBtn" to class="signUpBtn" to avoid duplicate IDs and ensure proper event listener attachment -->
+<button class="sign-in-btn signUpBtn">Sign Up</button><br>
+            <span class="sign-up">Already have an Account? <a href="#" class="sign-up-link" id="signInBtn3">Sign in</a></span>
+        </form>
+
+
+     </div>
+        </div>
+    </section>
+
+
+    <section id="notificationSection" class="notification-section ">
+     <div class="notification-container">
+        <div class="cancel-icon">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="notification-image">
+            <img src="Landing page Assets/Message.png" alt="Success Image">
+        </div>
+        <div class="notification-content">
+            <h5>Email Verification</h5>
+            <p> We've sent a verification link to your email. Please check your inbox and click the link to verify your account.</p>
+        </div>
+        <button class="ok-btn" id="okBtn">OK</button>
+        <div class="line"></div>
+        <div class="error-alternative">
+            <span class="email-error">Didn't get the mail</span><span class="resend-email">Resend email</span>
+        </div>
+     </div>
+    </section>
+
+
+    <section id="EmailSection" class="notification-section ">
+     <div class="notification-container">
+        <div class="cancel-icon">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="notification-image">
+            <img src="Landing page Assets/Bookmark image.png" alt="Bookmark Image">
+        </div>
+        <div class="email-content">
+            <h5>Awesome</h5>
+            <p> You're ready to use SafeAnchor</p>
+        </div>
+        <button class="start-btn" id="startBtn">Start</button>
+     </div>
+    </section>
+
+
+    <section id="expertQuestionnaire" class="notification-section " data-type="expertise">
+     <div class="questionnaire-container">
+        <div class="questionnaire-header">
+            <h5>Professional Background</h5>
+        </div>
+        <div class="questionnaire-content">
+            <h5>What is your area of expertise?</h5>
+            <input type="checkbox" id="expert1" name="expertise" value="psychology">
+            <label for="expert1">Psychology</label><br>
+            <input type="checkbox" id="expert2" name="expertise" value="social-work">
+            <label for="expert2">Social Work</label><br>
+            <input type="checkbox" id="expert3" name="expertise" value="trauma-counseling">
+            <label for="expert3">Trauma Counseling</label><br>
+            <input type="checkbox" id="expert4" name="expertise" value="crisis-response">
+            <label for="expert4">Crisis Response</label><br>
+            <input type="checkbox" id="expert5" name="expertise" value="therapist">
+            <label for="expert5">Therapist</label><br>
+
+
+        </div>
+        <button class="next-btn" id="expertiseNextBtn">Next</button>
+     </div>
+    </section>
+
+
+    <section id="timeQuestionnaire" class="notification-section " data-type="time">
+     <div class="questionnaire-container">
+        <div class="questionnaire-header">
+            <h5>Professional Background</h5>
+        </div>
+        <div class="questionnaire-content">
+            <h5>When do you usually feel most comfortable working?</h5>
+            <input type="checkbox" id="time1" name="time-preference" value="morning">
+            <label for="time1">Morning</label><br>
+            <input type="checkbox" id="time2" name="time-preference" value="afternoon">
+            <label for="time2">Afternoon</label><br>
+            <input type="checkbox" id="time3" name="time-preference" value="evening">
+            <label for="time3">Evening</label><br>
+            <input type="checkbox" id="time4" name="time-preference" value="anytime">
+            <label for="time4">Anytime</label><br>
+        </div>
+        <button class="next-btn" id="timeNextBtn">Next</button>
+     </div>
+    </section>
+
+
+    <section id="workQuestionnaire" class="notification-section " data-type="work">
+     <div class="questionnaire-container">
+        <div class="questionnaire-header">
+            <h5>Professional Background</h5>
+        </div>
+        <div class="questionnaire-content">
+            <h5>Have you worked with domestic violence/abuse victims before?</h5>
+            <input type="checkbox" id="work1" name="work-preference" value="yes">
+            <label for="work1">Yes</label><br>
+            <input type="checkbox" id="work2" name="work-preference" value="no">
+            <label for="work2">No</label><br>
+            <input type="checkbox" id="work3" name="work-preference" value="not-sure">
+            <label for="work3">Not sure</label><br>
+            <input type="checkbox" id="work4" name="work-preference" value="not-at-all">
+            <label for="work4">Not at all</label><br>
+        </div>
+        <button class="next-btn" id="workNextBtn">Next</button>
+     </div>
+   </section> <!-- The closing tag </section> wasnt there before so if you click next, it will go blank, so i added it-->
+
+
+    <section id="supportTypeQuestionnaire" class="notification-section " data-type="support">
+     <div class="questionnaire-container">
+        <div class="questionnaire-header">
+            <h5>Professional Background</h5>
+        </div>
+        <div class="questionnaire-content">
+            <h5>Which type of support do you provide?</h5>
+            <input type="checkbox" id="support1" name="support-type" value="emotional">
+            <label for="support1">Emotional support</label><br>
+            <input type="checkbox" id="support2" name="support-type" value="legal">
+            <label for="support2">Legal advice</label><br>
+            <input type="checkbox" id="support3" name="support-type" value="crisis">
+            <label for="support3">Crisis intervention</label><br>
+            <input type="checkbox" id="support4" name="support-type" value="therapy">
+            <label for="support4">Therapy</label><br>
+            <input type="checkbox" id="support5" name="support-type" value="referral">
+            <label for="support5">Resource referral</label><br>
+        </div>
+        <button class="next-btn" id="supportNextBtn">Next</button>
+     </div>
+    </section>
+
+
+    <section id="trainingQuestionnaire" class="notification-section " data-type="training">
+     <div class="questionnaire-container">
+        <div class="questionnaire-header">
+            <h5>Professional Background</h5>
+        </div>
+        <div class="questionnaire-content">
+            <h5>Are you comfortable receiving periodic training or refresher workshops on trauma-informed care?</h5>
+            <input type="checkbox" id="training1" name="training-type" value="yes">
+            <label for="training1">Yes</label><br>
+            <input type="checkbox" id="training2" name="training-type" value="no">
+            <label for="training2">No</label><br>
+            <input type="checkbox" id="training3" name="training-type" value="not-sure">
+            <label for="training3">Not sure</label><br>
+        </div>
+        <button class="next-btn" id="trainingNextBtn">Next</button>
+     </div>
+    </section>
+
+
+    <section id="experienceQuestionnaire" class="notification-section " data-type="experience">
+     <div class="questionnaire-container">
+        <div class="questionnaire-header">
+            <h5>Professional Background</h5>
+        </div>
+        <div class="questionnaire-content">
+            <h5>Have you worked on online counseling/support platforms before?</h5>
+            <input type="checkbox" id="experience1" name="experience-type" value="yes">
+            <label for="experience1">Yes</label><br>
+            <input type="checkbox" id="experience2" name="experience-type" value="no">
+            <label for="experience2">No</label><br>
+        </div>
+        <button class="next-btn" id="experienceNextBtn">Next</button>
+     </div>
+    </section>
+
+
+    <section id="certificateQuestionnaire" class="notification-section " data-type="certificate">
+     <div class="questionnaire-container">
+        <div class="questionnaire-header">
+            <h5>Professional Background</h5>
+        </div>
+        <div class="questionnaire-content">
+            <!-- Fixed: Corrected h5 text from "Have you worked on online counseling/support platforms before?" to proper upload instruction -->
+            <h5>Please upload your professional certificate</h5>
+            <input type="file" id="certificate" accept=".pdf,.jpg,.jpeg,.png" />
+            <label for="certificate">Upload Certificate</label><br>
+        </div>
+        <button class="next-btn" id="certificateNextBtn">Next</button>
+     </div>
+    </section>
+
+
+    <section id="CVQuestionnaire" class="notification-section " data-type="CV">
+     <div class="questionnaire-container">
+        <div class="questionnaire-header">
+            <h5>Professional Background</h5>
+        </div>
+        <div class="questionnaire-content">
+            <!-- Fixed: Corrected h5 text from "Have you worked on online counseling/support platforms before?" to proper upload instruction -->
+            <h5>Please upload your CV</h5>
+            <input type="file" id="CV" accept=".pdf,.doc,.docx" />
+            <label for="CV">Upload CV</label><br>
+        <button class="next-btn" id="CVNextBtn">Next</button>
+     </div>
+    </section>
+
+
+    <section id="genderQuestionnaire" class="notification-section " data-type="gender">
+     <div class="questionnaire-container">
+        <div class="questionnaire-header">
+            <h5>Help Us Match you with your patients.</h5>
+        </div>
+        <div class="questionnaire-content">
+            <h5>What's your Gender</h5>
+            <input type="checkbox" id="gender1" name="gender" value="male">
+            <label for="gender1">Male</label><br>
+            <input type="checkbox" id="gender2" name="gender" value="female">
+            <label for="gender2">Female</label><br>
+           
+        </div>
+        <a href="home.html" class="next-btn" id="genderNextBtn">Start</a>
+     </div>
+    </section>
+
+
+    <!-- Fixed: Changed script src from "expressflow.js" to "expertflow.js" to match the correct filename -->
+    <script src="expertflow.js"></script>
+</body>
+</html>
+

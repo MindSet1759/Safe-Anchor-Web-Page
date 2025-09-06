@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
+  background-color: #F5F7FB;
+  position: sticky;
+  z-index: 1000;
+  top: 0; /* distance from top of viewport */
+  height: fit-content; /* optional: shrink to content */
+  border-bottom: 1px solid #3ACEFF;
+}
+
+.topbar-logo img {
+    margin-left: 2rem;
+}
+
+.topbar-search {
+    border: 0.1rem solid #3ACEFF;
+    border-radius: 0.8rem;
+    width: 15rem;
+    display: flex;
+    outline: none;
+    background-color: #F3FAFF;
+    align-items: center;
+}
+
+.topbar-search img {
+    width: 1.2rem;
+    margin: 0 0.5rem;
+}
+
+.topbar-search input {
+  background: #F3FAFF;
+    padding: 0.5rem;
+    width: 8rem;
+    border: none;
+    outline: none;
+}
+
+.profile-section {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.notification-icon img {
+    font-size: 1.2rem;
+    color: #555;
+    cursor: pointer;
+    /* margin-top: 1rem; */
+}
+.profile img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-bottom: 0.4rem;
+}
+
+body {
+  background: #f5f7fb;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: 100vh;
+}
+
+
+
+/* Sidebar */
+.sidebar {
+  background: #F3FAFF;
+  border-right: 1px solid #ddd;
+  padding: 1rem;
+  position: sticky;
+  top: 2rem; /* distance from top of viewport */
+  height: fit-content; /* optional: shrink to content */
+}
+
+
+.sidebar .menu {
+  list-style: none;
+  margin-bottom: 15rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.sidebar .menu li {
+  align-items: center;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  /* color: #444; */
+}
+
+.sidebar .menu li img {
+    width: 2rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #585656;
+    font-size: 1rem;
+}
+
+.sidebar .menu .notifications,
+.sidebar ul li:hover {
+    background: #fff;
+    padding: 0.3rem;
+    border-radius: 10%;
+    font-weight: bold;
+    color: #2a6efc;
+}
+
+
+.quick-exit {
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+    display: flex;
+    gap: 0.2rem;
+    margin-top: 5rem;
+    cursor: pointer;
+    align-items: center;
+    text-decoration: none;
+}
+
+.quick-exit img {
+    width: 2rem;
+    height: 1.5rem;
+    vertical-align: middle;
+}
+
+
+.quick-exit p {
+  margin-left: 0.5rem;
+  text-decoration: none;
+  color: #585656;
+  font-size: 1rem;
+}
+
+
+
+
+
+/* Notifications Section */
+
+
+/* .user-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+} */
+
+.notif-bell {
+  position: relative;
+  padding: 0.5rem;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: red;
+  color: #fff;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
+
+/* Notifications */
+.notifications {
+  background: #f0f7ff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.notifications h2 {
+  margin-bottom: 15px;
+}
+
+.notification-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background: #fff; */
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border-bottom: 0.1rem solid #ddd;
+}
+
+.notification-item i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.notification-info {
+  flex: 1;
+}
+
+.notification-title {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.notification-text {
+  font-size: 13px;
+  color: #555;
+}
+
+.notification-time {
+  font-size: 12px;
+  color: gray;
+  white-space: nowrap;
+}
+
+/* Expandable notifications */
+.notification-item {
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.notification-item:hover {
+  background: #f9fcff;
+}
+
+.notification-details {
+  display: none;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #444;
+  /* line-height: 1.4; */
+}
+
+.notification-item.active .notification-details {
+  display: block;
+}
+

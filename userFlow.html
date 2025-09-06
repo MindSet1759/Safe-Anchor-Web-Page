@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="userflow.css">
+    <title>User form</title>
+</head>
+<body>
+    <section class="form-section active" id="firstSection">
+        
+        <div class="form-image">
+            <img src="Landing page Assets/signin image.png" alt="Sign In Image">
+        </div>
+        
+            <img src="Landing page Assets/SafeAnchor Logo.svg" alt="Sign In Image" class="anchorlogo">
+        
+        
+        <div class="form-container1">
+
+        <div class="form-container2">
+        <h1>Sign In</h1>
+        <p>Sign in to your account</p>
+        <form>
+            <label for="email">Email Address</label><br>
+            <input type="text" id="email" name="email" required><br>
+            
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" required><br>
+            <span class="forget-password">Forgot password?</span>
+            <br><br>
+            <button class="sign-in-btn" id="signUpBtn">Sign in</button><br>
+            <span class="sign-up">Dont have an Account? <a href="#" class="sign-up-link" id="signUpLink">Sign up</a></span>
+        </form>
+    
+     </div>
+        </div>
+    </section>
+
+
+    <section class="form-section" id="secondSection">
+        
+        <div class="form-image">
+            <img src="Landing page Assets/signin image.png" alt="Sign In Image">
+        </div>
+        <img src="Landing page Assets/SafeAnchor Logo.svg" alt="Sign In Image" class="anchorlogo">
+        
+        
+        
+        <div class="form-container1">
+
+        <div class="form-container2">
+        <h1>Create An Account</h1>
+        <p>Create an account to use <span class="emphasis">SafeAnchor</span></p>
+        <button class="register-btn" id="registerBtn">Register With Username</button>
+        <div class="alternative">
+            <span class="line-through1"></span><span class="or">OR</span><span class="line-through2"></span>
+        </div>
+        <form>
+            <label for="email">Email Address</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="fullName">Full Name</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="number">Phone Number</label><br>
+            <input type="tel" id="number" name="number" required><br>
+
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" required><br>
+
+            <label for="password">Confirm Password</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <button class="sign-in-btn" id="signUpBtn">Sign Up</button><br>
+            <span class="sign-up">Already have an Account? <a href="#" class="sign-up-link" id="signInBtn2">Sign in</a></span>
+        </form>
+    
+     </div>
+        </div>
+    </section>
+
+    <section class="form-section" id="thirdSection">
+
+        <div class="form-image">
+            <img src="Landing page Assets/signin image.png" alt="Sign In Image">
+        </div>
+        <img src="Landing page Assets/SafeAnchor Logo.svg" alt="Sign In Image" class="anchorlogo">
+
+
+        <div class="form-container1">
+
+        <div class="form-container2">
+        <h1>Create An Account</h1>
+        <p>Create an account to use <span class="emphasis">SafeAnchor</span></p>
+        
+        <form>
+            <label for="username">Username</label><br>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="email">Email Address</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="number">Phone Number</label><br>
+            <input type="tel" id="number" name="number" required><br>
+
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" required><br>
+
+            <label for="password">Confirm Password</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <button class="sign-in-btn" id="signUpBtn">Sign Up</button><br>
+            <span class="sign-up">Already have an Account? <a href="#" class="sign-up-link" id="signInBtn3">Sign in</a></span>
+        </form>
+
+     </div>
+        </div>
+    </section>
+
+    <section id="notificationSection" class="notification-section ">
+     <div class="notification-container">
+        <div class="cancel-icon">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="notification-image">
+            <img src="Landing page Assets/Message.png" alt="Success Image">
+        </div>
+        <div class="notification-content">
+            <h5>Email Verification</h5>
+            <p> We've sent a verification link to your email. Please check your inbox and click the link to verify your account.</p>
+        </div>
+        <button class="ok-btn" id="okBtn">OK</button>
+        <div class="line"></div>
+        <div class="error-alternative">
+            <span class="email-error">Didn't get the mail</span><span class="resend-email">Resend email</span>
+        </div>
+     </div>
+    </section>
+
+    <section id="EmailSection" class="notification-section ">
+     <div class="notification-container">
+        <div class="cancel-icon">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="notification-image">
+            <img src="Landing page Assets/Bookmark image.png" alt="Bookmark Image">
+        </div>
+        <div class="email-content">
+            <h5>Awesome</h5>
+            <p> You're ready to use SafeAnchor</p>
+        </div>
+        <button class="start-btn" id="startBtn">Start</button>
+     </div>
+    </section>
+
+    <section id="purposeQuestionnaire" class="notification-section " data-type="purpose">
+     <div class="questionnaire-container">
+        <div class="questionnaire-header">
+            <h5>Help Us Match you with your therapist.</h5>
+        </div>
+        <div class="questionnaire-content">
+            <h5>What brings you here today?</h5>
+            <input type="checkbox" id="purpose1" name="purpose" value="talk-to-professional">
+            <label for="purpose1">I need to talk to a professional.</label><br>
+            <input type="checkbox" id="purpose2" name="purpose" value="supporting-loved-one">
+            <label for="purpose2">I'm supporting a loved one who is experiencing abuse.</label><br>
+            <input type="checkbox" id="purpose3" name="purpose" value="safe-space">
+            <label for="purpose3">I'm not sure, I just need a safe space.</label><br>
+            <input type="checkbox" id="purpose4" name="purpose" value="learn-more">
+            <label for="purpose4">I want to learn more about abuse and recovery.</label><br>
+        </div>
+        <button class="next-btn" id="purposeNextBtn">Next</button>
+     </div>
+    </section>
+
+    <section id="timeQuestionnaire" class="notification-section " data-type="time-preference">
+     <div class="questionnaire-container">
+        <div class="questionnaire-header">
+            <h5>Help Us Match you with your therapist.</h5>
+        </div>
+        <div class="questionnaire-content">
+            <h5>When do you usually feel most comfortable reaching out?</h5>
+            <input type="checkbox" id="time1" name="time-preference" value="morning">
+            <label for="time1">Morning</label><br>
+            <input type="checkbox" id="time2" name="time-preference" value="afternoon">
+            <label for="time2">Afternoon</label><br>
+            <input type="checkbox" id="time3" name="time-preference" value="evening">
+            <label for="time3">Evening</label><br>
+            <input type="checkbox" id="time4" name="time-preference" value="anytime">
+            <label for="time4">Anytime</label><br>
+        </div>
+        <button class="next-btn" id="timeNextBtn">Next</button>
+     </div>
+    </section>
+
+    <section id="supportTypeQuestionnaire" class="notification-section " data-type="support-type">
+     <div class="questionnaire-container">
+        <div class="questionnaire-header">
+            <h5>Help Us Match you with your therapist.</h5>
+        </div>
+        <div class="questionnaire-content">
+            <h5>Which type of support are you seeking?</h5>
+            <input type="checkbox" id="support1" name="support-type" value="emotional">
+            <label for="support1">Emotional support (counselor, therapist).</label><br>
+            <input type="checkbox" id="support2" name="support-type" value="physical">
+            <label for="support2">Physical recovery (physiotherapist, medical expert).</label><br>
+            <input type="checkbox" id="support3" name="support-type" value="general">
+            <label for="support3">General advice/resources.</label><br>
+            <input type="checkbox" id="support4" name="support-type" value="not-sure">
+            <label for="support4">Not sure yet.</label><br>
+        </div>
+        <button class="next-btn" id="supportNextBtn">Next</button>
+     </div>
+    </section>
+
+    <section id="abuseTypeQuestionnaire" class="notification-section " data-type="abuse-type">
+     <div class="questionnaire-container">
+        <div class="questionnaire-header">
+            <h5>Help Us Match you with your therapist.</h5>
+        </div>
+        <div class="questionnaire-content">
+            <h5>Identify your type of abuse</h5>
+            <input type="checkbox" id="abuse1" name="abuse-type" value="physical">
+            <label for="abuse1">Physical Abuse</label><br>
+            <input type="checkbox" id="abuse2" name="abuse-type" value="sexual">
+            <label for="abuse2">Sexual abuse</label><br>
+            <input type="checkbox" id="abuse3" name="abuse-type" value="domestic">
+            <label for="abuse3">Domestic violence or abuse</label><br>
+            <input type="checkbox" id="abuse4" name="abuse-type" value="psychological">
+            <label for="abuse4">Psychological or emotional abuse</label><br>
+            <input type="checkbox" id="abuse5" name="abuse-type" value="others">
+            <label for="abuse5">Others</label><br>
+        </div>
+        <button class="next-btn" id="abuseNextBtn">Next</button>
+     </div>
+    </section>
+
+    <section id="helpTypeQuestionnaire" class="notification-section " data-type="help-type">
+     <div class="questionnaire-container">
+        <div class="questionnaire-header">
+            <h5>Help Us Match you with your therapist.</h5>
+        </div>
+        <div class="questionnaire-content">
+            <h5>What kind of help or support would you be most interested in?</h5>
+            <input type="checkbox" id="help1" name="help-type" value="counseling">
+            <label for="help1">One-on-one counseling</label><br>
+            <input type="checkbox" id="help2" name="help-type" value="group-support">
+            <label for="help2">Group support or forums</label><br>
+            <input type="checkbox" id="help3" name="help-type" value="educational">
+            <label for="help3">Educational resources</label><br>
+            <input type="checkbox" id="help4" name="help-type" value="emergency">
+            <label for="help4">Emergency hotlines</label><br>
+            <input type="checkbox" id="help5" name="help-type" value="anonymous-talk">
+            <label for="help5">just someone to talk to anonymously</label><br>
+        </div>
+        <button class="next-btn" id="helpNextBtn">Next</button>
+     </div>
+    </section>
+
+    <section id="genderQuestionnaire" class="notification-section " data-type="gender">
+     <div class="questionnaire-container">
+        <div class="questionnaire-header">
+            <h5>Help Us Match you with your therapist.</h5>
+        </div>
+        <div class="questionnaire-content">
+            <h5>What's your Gender</h5>
+            <input type="checkbox" id="gender1" name="gender" value="male">
+            <label for="gender1">Male</label><br>
+            <input type="checkbox" id="gender2" name="gender" value="female">
+            <label for="gender2">Female</label><br>
+            
+        </div>
+        <a href="userHero.html" class="next-btn" id="genderNextBtn">Next</a>
+     </div>
+    </section>
+
+    <script src="userflow.js"></script>
+</body>
+</html>
