@@ -6,9 +6,7 @@
     box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
-}
+
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -167,7 +165,7 @@ body{
     display: block;
 
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 
@@ -184,7 +182,7 @@ body{
 } */
 
 /* Center the table container */
-/* .container {
+.container {
   flex-grow: 1;
   display: inline-block; 
   justify-content: center;
@@ -192,52 +190,52 @@ body{
   padding: 40px 20px;
  
   
-} */
+}
 
 /* Table styling */
-/* table {
+table {
   width: 90%;
   border-collapse: collapse;
   background-color: white;
-  
+  /* table-layout: fixed; */
    margin: 0 auto;
    position: relative;
    top: 70px;
    right: 400px;
    
-} */
-/* 
+}
+
 .col1{
     padding-right: 100px;
-} */
+}
 
-/* .col2{
+.col2{
     padding-right: 70px;
-} */
+}
 
 /* Prevent line breaks in headers or cells */
-/* th, td {
+th, td {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 12px 20px;
   text-align: center;
-  
+  /* border: 1px solid #ddd; */
    margin: 0 auto;
-} */
+}
 
-/* tbody td:first-child{
+tbody td:first-child{
     padding-left: -150px;
-} */
+}
 
-/* tbody td:last-child{
+tbody td:last-child{
     padding-left: 45px;
-} */
+}
 
 /* Header styling */
-/* thead th {
+thead th {
   font-weight: bold;
-} */
+}
 
 /* Zebra striping for readability */
 /* tbody tr:nth-child(even) {
@@ -247,55 +245,3 @@ body{
 /* tbody tr:hover {
   background-color: #f1f1f1;
 } */
-
-/* New Help Style */
-
-/* Help Page Styles Start */
-.container {
-    flex-grow: 1;
-    /* display: inline-block;
-    justify-content: center;
-    align-items: center; */
-    /* padding: 40px; */
-    position: relative;
-    top: 100px;
-    left: -630px;
-}
-
-table {
-    width: 90%;
-    border-collapse: collapse;
-    background-color: white;
-    margin: 0 auto;
-    position: relative;
-}
-
-.table-header{
-    background-color: #F3FAFF;
-}
-
-.col1 {
-    padding-right: 100px;
-}
-
-.col2 {
-    padding-right: 70px;
-}
-
-th, td {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding: 12px 20px;
-    text-align: center;
-    margin: 0 auto;
-}
-
-tbody td:first-child {
-    padding-left: -150px;
-}
-
-tbody td:last-child {
-    padding-left: 45px;
-}
-/* Help Page Styles End */

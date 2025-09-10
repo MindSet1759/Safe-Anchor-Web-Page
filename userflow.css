@@ -47,6 +47,7 @@ p{
     
 }
 
+
 .anchorlogo{
     position: absolute;
     bottom: 80px;
@@ -350,6 +351,22 @@ padding: 4px;
     text-decoration: none;
 }
 
+.back-btn{
+    color: white;
+    background: #0B1A43;
+    width: 325px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+    margin: 15px auto;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
 /* Responsive Media Queries */
 
 /* Medium screens (tablets, 768px - 1199px) */
@@ -361,7 +378,9 @@ padding: 4px;
     
     .form-image {
         width: 300px;
-        margin-bottom: 30px;
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-left: 0;
     }
     
     .anchorlogo {
@@ -425,7 +444,7 @@ padding: 4px;
     .register-btn,
     .next-btn,
     .ok-btn,
-    .start-btn {
+    .start-btn, .back-btn {
         width: 100%;
         max-width: 300px;
     }
@@ -454,58 +473,7 @@ padding: 4px;
 }
 
 /* Extra small screens (phones, below 480px) */
-@media (max-width: 479px) {
-    h1 {
-        font-size: 24px;
-    }
-    
-    p {
-        font-size: 13px;
-    }
-    
-    .form-image {
-        width: 200px;
-    }
-    
-    .form-container2,
-    .notification-container,
-    .questionnaire-container {
-        padding: 0.8rem;
-    }
-    
-    .form-container2 input,
-    .sign-in-btn,
-    .register-btn,
-    .next-btn,
-    .ok-btn,
-    .start-btn {
-        font-size: 13px;
-        padding: 8px;
-    }
-    
-    .sign-up {
-        flex-direction: column;
-        gap: 5px;
-    }
-    
-    .questionnaire-content h5 {
-        font-size: 15px;
-    }
-    
-    .questionnaire-content label {
-        font-size: 13px;
-    }
-    
-    .notification-content,
-    .email-content {
-        padding: 1rem 1rem 0 1rem;
-    }
-    
-    .fa-times {
-        font-size: 16px;
-        padding: 3px;
-    }
-}
+
 
 
 @media (min-width: 1200px) {
@@ -514,12 +482,60 @@ padding: 4px;
     }
 }
 
+@media (min-width: 768px){
+    .anchorlogo{
+        position: absolute;
+        left: 100px;
+    }
+
+    .form-section.active{
+        flex-direction: row;
+        width: 100%;
+    }
+}
 
 @media (max-width: 767px) {
     body {
-        height: 100vh;
+        height: 70vh;
+        background: #F3FAFF;
     }
     
+    h1{
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+.register-btn{
+    font-size: 12px;
+    padding: 6px;
+    width: 100%;
+}
+
+.sign-up{
+    flex-direction: column;
+}
+
+.alternative{
+    margin: 10px auto;
+}
+
+.form-container2 label{
+    font-size: 12px;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.form-container2 input{
+    margin-bottom: 10px;
+}
+
+.form-container2{
+    margin-top: 200px;
+}
+
     .form-section.active {
         flex-direction: column;
         padding: 10px;
@@ -528,4 +544,49 @@ padding: 4px;
     .form-image, .anchorlogo {
         display: none;
     }
+
+    .notification-content p {
+        color: #585656;
+        margin-top: 10px;
+        font-size: 13px;
+    }
+
+    .questionnaire-header h5{
+        text-align: center;
+    }
+
+    .questionnaire-content h5{
+        font-size: 14px;
+    }
+
+    .questionnaire-content label{
+        margin-left: 5px;
+        font-size: 12px;
+        word-wrap: break-word;
+        white-space: normal;
+    }
+
+    .notification-section.active{
+        padding: unset;
+    }
+
+    .questionnaire-container{
+        padding: unset;
+        width: auto;
+    }
+
+    #purpose3, #support3{
+        margin-top: 10px;
+    }
+
+    .form-container2 input,
+    .sign-in-btn,
+    .register-btn,
+    .next-btn,
+    .ok-btn,
+    .start-btn, .back-btn {
+        width: 100%;
+    }
+
 }
+

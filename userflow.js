@@ -12,7 +12,8 @@ const sections = {
     support: document.getElementById('supportTypeQuestionnaire'),
     abuse: document.getElementById('abuseTypeQuestionnaire'),
     help: document.getElementById('helpTypeQuestionnaire'),
-    gender: document.getElementById('genderQuestionnaire')
+    gender: document.getElementById('genderQuestionnaire'),
+    body: document.getElementById('ContentBody')
 };
 
 // Function to show a specific section and hide others
@@ -53,6 +54,7 @@ document.querySelectorAll('#signUpBtn').forEach(btn => {
     btn.addEventListener("click", function (e) {
         e.preventDefault(); // Prevent default link behavior
         showSection(sections.notification);
+        sections.body.style.height = '100vh';
     })
 });
 
@@ -83,6 +85,26 @@ document.getElementById('abuseNextBtn').addEventListener("click", function () {
 
 document.getElementById('helpNextBtn').addEventListener("click", function () {
     showSection(sections.gender);
+});
+
+// Back button event listeners for questionnaires
+document.querySelectorAll('.back-btn').forEach(btn => {
+    btn.addEventListener("click", function () {
+        const currentSection = this.closest('.notification-section');
+        const currentId = currentSection.id;
+        
+        if (currentId === 'timeQuestionnaire') {
+            showSection(sections.purpose);
+        } else if (currentId === 'supportTypeQuestionnaire') {
+            showSection(sections.time);
+        } else if (currentId === 'abuseTypeQuestionnaire') {
+            showSection(sections.support);
+        } else if (currentId === 'helpTypeQuestionnaire') {
+            showSection(sections.abuse);
+        } else if (currentId === 'genderQuestionnaire') {
+            showSection(sections.help);
+        }
+    });
 });
 
 // Optional: Add keyboard navigation support

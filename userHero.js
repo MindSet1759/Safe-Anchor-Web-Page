@@ -275,9 +275,25 @@ navItems.forEach(item => {
 //  functionality for notification icon
 
 const NotifyIcon = document.querySelector('.notify-icon');
+const NotifyIcon2 = document.querySelector('.notify-icon2');
 const BookSessionIcon = document.querySelector('.books-session');
 
  NotifyIcon.addEventListener('click', function() {
+    mainSection.style.gridTemplateColumns = '0.6fr 3fr 0fr';
+    contentArea.classList.remove('active');
+    rightSidebar.classList.remove('active');
+    expertArea.classList.remove('active');
+    chatsSidebar.classList.remove('active');
+    resourcesArea.classList.remove('active');
+    resourcesAreaContents.classList.remove('active');
+    bookSectionArea.classList.remove('active');
+    notificationArea.classList.add('active');
+    articleArea.classList.remove('active');
+    settingsArea.classList.remove('active');
+    helpArea.classList.remove('active');
+ })
+ 
+ NotifyIcon2.addEventListener('click', function() {
     mainSection.style.gridTemplateColumns = '0.6fr 3fr 0fr';
     contentArea.classList.remove('active');
     rightSidebar.classList.remove('active');
@@ -444,7 +460,42 @@ toggleSwitch.addEventListener('change', function() {
 
 // Toggle switch functionality ends here
 
+const menuIcon = document.querySelector('.fa-bars');
+const cancelIcon = document.querySelector('.fa-x');
+menuIcon.addEventListener('click', function() {
+    menuIcon.style.display = 'none';
+    cancelIcon.style.display = 'block';
+
+    const leftSidebar = document.querySelector('.left-sidebar');
+    if (leftSidebar.style.display === 'none' || leftSidebar.style.display === '') {
+        leftSidebar.style.display = 'block';
+       
+    } else {
+    leftSidebar.style.display = 'block';
+    }
+});
+
+cancelIcon.addEventListener('click', function() {
+    menuIcon.style.display = 'block';
+    cancelIcon.style.display = 'none';
+
+    const leftSidebar = document.querySelector('.left-sidebar');
+    if (leftSidebar.style.display === 'block' || leftSidebar.style.display === '') {
+        leftSidebar.style.display = 'none';
+       
+    } else {
+    leftSidebar.style.display = 'block';
+    }
+});
 
 
 
+
+// const searchIcon = document.querySelector(".searchIcon");
+// const InputContainer = document.querySelector(".input-container");
+
+// searchIcon.addEventListener("click", function() {
+//     InputContainer.style.display  = 'flex';
+//     searchIcon.style.display = 'none';
+// })
 
