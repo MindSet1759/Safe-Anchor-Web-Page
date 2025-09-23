@@ -519,60 +519,60 @@ const appointmentInformation = document.querySelector('.appointment-information'
  });
  
 //  For sending the booking session details to the backend
- modalBtn2.addEventListener('click', async function(e) {
-     e.preventDefault();
+//  modalBtn2.addEventListener('click', async function(e) {
+//      e.preventDefault();
 
-     const selectedExpert = expertSelect.value;
-     const reason = document.getElementById('reason-text').value;
-    //  const questions = document.getElementById('question-text').value;
-     const dateInput = document.getElementById('bookingDate').value;
-     const timeInput = document.getElementById('bookingTime').value;
-     const scheduledAt = new Date(`${dateInput}T${timeInput}`).toISOString();
-     const durationTime = 0;
-     const data = {
-  expertId: selectedExpert,
-  scheduledAt: scheduledAt,
-  notes: reason,
-  duration: durationTime,
-     }
-     console.log(data);
+//      const selectedExpert = expertSelect.value;
+//      const reason = document.getElementById('reason-text').value;
+//     //  const questions = document.getElementById('question-text').value;
+//      const dateInput = document.getElementById('bookingDate').value;
+//      const timeInput = document.getElementById('bookingTime').value;
+//      const scheduledAt = new Date(`${dateInput}T${timeInput}`).toISOString();
+//      const durationTime = 0;
+//      const data = {
+//   expertId: selectedExpert,
+//   scheduledAt: scheduledAt,
+//   notes: reason,
+//   duration: durationTime,
+//      }
+//      console.log(data);
 
-     try {
-         const token = localStorage.getItem('authToken');
-         const response = await fetch('https://safe-anchor-backend.onrender.com/api/sessions/book', {
-             method: 'POST',
-             headers: {
-                'Authorization': 'Bearer ' + token,
-                 'Content-Type': 'application/json'
-             },
-             body: JSON.stringify(data)
-         });
-         const result = await response.json();
-         console.log(result);
+//      try {
+//          const token = localStorage.getItem('authToken');
+//          const response = await fetch('https://safe-anchor-backend.onrender.com/api/sessions/book', {
+//              method: 'POST',
+//              headers: {
+//                 'Authorization': 'Bearer ' + token,
+//                  'Content-Type': 'application/json'
+//              },
+//              body: JSON.stringify(data)
+//          });
+//          const result = await response.json();
+//          console.log(result);
 
-         if (response.ok) {
-             alert('Booking confirmed successfully!');
-             modal1.style.display = 'none';
-             modal2.style.display = 'none';
-             btn.style.display = 'none';
-             appointmentInformation.style.display = 'block';
-         } else {
-             alert('Failed to confirm booking. Please try again.');
-         }
-     } catch (error) {
-         console.error('Error confirming booking:', error);
-         alert('An error occurred while confirming the booking.');
-     }
+//          if (response.ok) {
+//              alert('Booking confirmed successfully!');
+//              modal1.style.display = 'none';
+//              modal2.style.display = 'none';
+//              btn.style.display = 'none';
+//              appointmentInformation.style.display = 'block';
+//          } else {
+//              alert('Failed to confirm booking. Please try again.');
+//          }
+//      } catch (error) {
+//          console.error('Error confirming booking:', error);
+//          alert('An error occurred while confirming the booking.');
+//      }
 
     
 
- });
+//  });
 
-// modalBtn2.addEventListener('click', async function (e) {
-//      appointmentInformation.style.display = 'block';
-//      modal2.style.display = 'none';
-//      btn.style.display = 'none';
-//  })
+modalBtn2.addEventListener('click', async function (e) {
+     appointmentInformation.style.display = 'block';
+     modal2.style.display = 'none';
+     btn.style.display = 'none';
+ })
  
  span.forEach(closeBtn => {
      closeBtn.addEventListener('click', function() {
