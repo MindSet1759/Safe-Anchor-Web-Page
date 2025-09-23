@@ -46,7 +46,7 @@ const removeIcon = document.getElementById('removeIcon');
 const modalSignup = document.querySelector('.modal-signup');
 
 menuIcon.addEventListener('click', function(event) {
-    console.log(event.target);
+    // console.log(event.target);
     
     if (event.target === menuBars) {
         modalSignup.style.display = 'flex';
@@ -74,3 +74,47 @@ signInOptions.forEach(btn => {
 // window.onclick = function() {
 //     ModalContents.style.display = 'none';
 // }
+
+// Show sign-in modal when any "Book Session" button is clicked
+const expertButtons = document.querySelectorAll('.expert-btn');
+const signInModal = document.getElementById('signInModal');
+const closeBtn = document.querySelector('.close');
+
+expertButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        signInModal.style.display = 'block';
+    });
+});
+
+// Close modal when clicking the close button
+closeBtn.addEventListener('click', () => {
+    signInModal.style.display = 'none';
+});
+
+// Close modal when clicking outside the modal content
+window.addEventListener('click', (event) => {
+    if (event.target === signInModal) {
+        signInModal.style.display = 'none';
+    }
+});
+
+document.querySelector('.exit-btn').addEventListener('click', function () {
+    window.open('', '_self').close();
+
+})
+
+const heartIcons = document.querySelectorAll('.fa-heart');
+
+heartIcons.forEach(icon => {
+    icon.addEventListener('click', function() {
+        if (icon.classList.contains('fa-regular')) {
+            icon.classList.remove('fa-regular');
+            icon.classList.add('fa-solid');
+            icon.classList.add('heart-active'); // Add red color class
+        } else {
+            icon.classList.add('fa-regular');
+            icon.classList.remove('fa-solid');
+            icon.classList.remove('heart-active'); // Remove red color class
+        }
+    });
+});

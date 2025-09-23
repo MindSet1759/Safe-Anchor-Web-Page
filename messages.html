@@ -11,7 +11,13 @@
 </head>
 <body>
      <header class="topbar">
-        <div class="topbar-logo"><img src="Landing page Assets/SafeAnchor Logo.svg" alt="SafeAnchor"></div>
+        <!-- Hamburger for mobile -->
+        <div id="hamburger">&#9776;</div>
+        <div class="topbar-logo">
+          <a href="home.html">
+            <img src="Landing page Assets/SafeAnchor Logo.svg" alt="SafeAnchor">
+          </a>
+        </div>
         
         <div class="topbar-search">
              <img src="Landing page Assets/search-icon.png" alt="icon" class="search-icon">
@@ -24,7 +30,7 @@
                 <a href="notifications.html" class="notification-icon"><img src="Landing page Assets/notify-icon.png" alt="Notifications"></a>
             </div>
             <div class="profile">
-                <img src="Landing page Assets/Avatar 1.jpg" alt="Dr. Jane Doe">
+                <a href="settings.html"><img src="Landing page Assets/Avatar 1.jpg" alt="Dr. Jane Doe"></a>
             </div>
         </div>
         
@@ -38,14 +44,12 @@
         <li class="home"><a href="home.html"><img src="Landing page Assets/Home icon.png" alt="Home">Home</a></li>
         <li class="patient"><a href="patient.html"><img src="Landing page Assets/Resources icon.png" alt="Patients">Patients</a></li>
         <li class="schedules"><a href="schedules.html"><img src="Landing page Assets/Guidance.png" alt="Schedules">Schedules</a></li>
-        <li class="messages"><a href="messages.html"><img src="Landing page Assets/support icon.png" alt="Messages">Messages</a></li>
+        <li class="messages"><a href="messages.html" style="color: #3ACEFF;"><img src="Landing page Assets/support icon.png" alt="Messages">Messages</a></li>
         <li class="settings"><a href="settings.html"><img src="Landing page Assets/setting icon.png" alt="Settings">Settings</a></li>
         <li class="help"><a href="help.html"><img src="Landing page Assets/Help icon.png" alt="Help">Help</a></li>
       </ul>
       <div class="quick-exit">
-        <a href="expertflow.html">          
-          <p class="quick-exit-text"><img src="Landing page Assets/exit image.png" alt="Quick Exit"><a href="index(updated).html">Quick Exit</a> </p>
-        </a>
+        <p class="quick-exit-text"><img src="Landing page Assets/exit image.png" alt="Quick Exit"><a href="about:blank" target="_self" style="color: #585656; text-decoration: none;">Quick Exit</a></p>        
       </div>
     </aside>
 
@@ -57,52 +61,56 @@
       <div class="messages-container">
         <!-- Chat List -->
         <div class="chat-list">
-          <h3>Chats</h3>
-          <ul>
-            <li>
-              <img src="Landing page Assets/Avatar 1.jpg" alt="Profile-pic">
-              <div>
-                <p class="name">John Janet</p>
-                <p class="last-msg">How are you doing?</p>
-              </div>
-              <span class="time">01:20</span>
-              <span class="badge">2</span>
-            </li>
-            <li>
-              <img src="Landing page Assets/Avatar 1.jpg" alt="Profile-pic">
-              <div>
-                <p class="name">Bukola Jimoh</p>
-                <p class="last-msg">Good morning</p>
-              </div>
-              <span class="time">Yesterday</span>
-            </li>
-            <li>
-              <img src="Landing page Assets/Avatar 1.jpg" alt="Profile-pic">
-              <div>
-                <p class="name">User Name</p>
-                <p class="last-msg">I want a session.</p>
-              </div>
-              <span class="time">Thursday</span>
-            </li>
-            <li>
-              <img src="Landing page Assets/Avatar 1.jpg" alt="Profile-pic">
-              <div>
-                <p class="name">Mr Goodness</p>
-                <p class="last-msg">How are you doing?</p>
-              </div>
-              <span class="time">13:06</span>
-              <span class="badge">4</span>
-            </li>
-          </ul>
+          <div class="chat-types">
+            <h3 class="chats-tab active" data-tab="chat-tab">Chats</h3>
+            <h3 class="calls-tab" data-tab="call-tab">Calls</h3>
+          </div>
+
+          <!-- Chats -->
+          <div id="chat-tab" class="chats-list active">
+            <ul>
+              <li class="chat-item" data-name="John Janet" data-id="#CU1234">
+                <img src="Landing page Assets/Avatar 1.jpg" alt="Profile-pic">
+                <div>
+                  <p class="name">John Janet</p>
+                  <p class="last-msg">How are you doing?</p>
+                </div>
+                <span class="time">01:20</span>
+                <span class="badge">2</span>
+              </li>
+              <li class="chat-item" data-name="Bukola Jimoh" data-id="#CU5678">
+                <img src="Landing page Assets/Avatar 1.jpg" alt="Profile-pic">
+                <div>
+                  <p class="name">Bukola Jimoh</p>
+                  <p class="last-msg">Good morning</p>
+                </div>
+                <span class="time">Yesterday</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Calls -->
+          <div id="call-tab" class="calls-list">
+            <ul>
+              <li class="chat-item" data-name="User Name" data-id="#CU9999">
+                <img src="Landing page Assets/Avatar 1.jpg" alt="Profile-pic">
+                <div>
+                  <p class="name">User Name</p>
+                  <p class="last-msg">Incoming Call</p>
+                </div>
+                <span class="time">Thursday</span>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <!-- Chat Window -->
+        <!-- Chat/Call Window -->
         <div class="chat-window">
           <div class="chat-header">
-            <img src="Landing page Assets/Avatar 2.jpg" alt="Profile-pic">
+            <img src="Landing page Assets/Avatar 2.jpg" alt="Profile-pic" id="chat-avatar">
             <div>
-              <p class="name">Support ADMIN</p>
-              <p class="id">#CU6798H</p>
+              <p class="name" id="chat-name">Select a chat</p>
+              <p class="id" id="chat-id"></p>
             </div>
             <div class="chat-actions">
               <button>📞</button>
@@ -111,23 +119,22 @@
             </div>
           </div>
 
-          <div class="chat-body">
-            <div class="msg left">
-              <span class="bubble"></span>
-              <span class="time">8:00 PM</span>
-            </div>
-            <div class="msg right">
-              <span class="bubble"></span>
-              <span class="time">8:00 PM</span>
-            </div>
+          <div class="chat-body" id="chat-body">
+            <p>Select a conversation from the list</p>
           </div>
 
           <div class="chat-footer">
-            <input type="text" placeholder="Digite a mensagem">
+            <input type="text" placeholder="Type in message">
             <button class="send">➤</button>
           </div>
         </div>
+
+
+
+
+
       </div>
+      <script src="messages.js"></script>
     </main>
   
     

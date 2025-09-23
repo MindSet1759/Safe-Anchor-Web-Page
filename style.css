@@ -25,9 +25,6 @@ a{
     text-decoration: none;
 }
 
-
-
-
 .top-header p{
     color: #EFEEEE;
     font-weight: 600;
@@ -72,10 +69,10 @@ a{
 
 .sign-in-btn:hover{
     border-radius: 10px;
-    color:white;
     font-size: 14px;
-    /* border: 1px solid #3ACEFF; */
-    background-color:#3ACEFF ;
+    color: #0B1A43;
+    border: 1px solid #0B1A43;
+    background-color: transparent;
     font-weight: 500;
     padding: 6px;
     margin-right: 10px;
@@ -96,13 +93,9 @@ a{
 }
 
 .Talk-btn:hover{
-    /* background-color: transparent;
-    border: 1px solid #0B1A43; */
-    color: #fff;
-    /* font-size: 14px;
-    padding: 8px;
-    border-radius: 10px;
-    cursor: pointer; */
+    color: #0B1A43;
+    border: 1px solid #0B1A43;
+    background-color: transparent;
 }
 
 .nav-header-img{
@@ -206,9 +199,9 @@ a{
 .user-signup:hover{
     font-weight: 500;
     font-size: 14px;
-    background-color: #3ACEFF;
-    color: white;
-    /* border: 1px solid #0B1A43; */
+    color: #0B1A43;
+    border: 1px solid #0B1A43;
+    background-color: transparent;
     border-radius: 10px;
     padding: 10px;
     cursor: pointer;
@@ -319,7 +312,6 @@ a{
 
 .about-btn{
     background-color: #3ACEFF;
-    color: #0B1A43;
     padding: 8px;
     outline: none;
     border: none;
@@ -329,19 +321,8 @@ a{
     margin-top: 40px;
 }
 
-.about-btn:hover{
-    background-color: transparent;
-    border: 1px solid #3ACEFF;
-    color: #3ACEFF;
-    padding: 8px;
-    outline: none;
-    /* border: none; */
-    font-size: 16px;
-    border-radius: 10px;
-    font-weight: 500;
-    margin-top: 40px;
-    transition: ease-in 0.5s;
-    cursor: pointer;
+.about-btn a{
+color: #0B1A43;
 }
 
 .about-us-text h5{
@@ -403,6 +384,22 @@ a{
         cursor: pointer;
 }
 
+/* Heart icons in expert cards */
+.expert-icon .fa-regular.fa-heart{
+    color: #0B1A43;
+    cursor: pointer;
+}
+
+/* Heart active state - red color when clicked */
+.heart-active {
+    color: #E91919 !important;
+}
+
+/* Menu icons - bars and X icons */
+.fa-solid.fa-bars, .fa-solid.fa-x{
+    color: #0B1A43;
+}
+
  .expert-card-container{
     display: flex;
     justify-content: center;
@@ -438,12 +435,12 @@ font-weight: 400;
 
 .expert-btn:hover{
     color: #0B1A43;
+    border: 1px solid #0B1A43;
+    background-color: transparent;
      border-radius: 10px;
      outline: none;
-     border: 1px solid #3ACEFF;
      padding: 10px;
      font-size: 14px;
-     background-color:#3ACEFF ;
      width: 180px;
      cursor: pointer;
  }
@@ -458,6 +455,8 @@ font-weight: 400;
 .choose-us-container{
     background-color: #F3FAFF;
     padding: 1rem;
+        border-bottom: 1px solid #3ACEFF;
+    padding-bottom: 3rem;
 }
 
 .choose-us-features{
@@ -519,7 +518,6 @@ height: auto;
 
 .guidelines-container{
     position: relative;
-    margin-top: 24px;
     height: auto;
     background-color: #F3FAFF;
 }
@@ -532,7 +530,7 @@ height: auto;
 .first-header{
     color: #0B1A43;
     font-weight: 500;
-    font-size: 35px;
+    font-size: 30px;
 }
 .second-header{
     color: #000029;
@@ -551,10 +549,14 @@ height: auto;
 }
 .guideline-card2{
     width: 900px;
-    margin: 0 auto 0 175px;
+    margin: 50px auto 50px 175px;
     display: flex;
     justify-content: space-between;
 }
+
+.guideline-images img{
+        width: 250px;
+    }
 
 .guideline-card3{
     width: 1008px;
@@ -683,7 +685,11 @@ height: auto;
     cursor: pointer;
 }
 
-.journey-btn:hover{
+.journey-btn a{
+    color: #0B1A43;
+}
+
+/* .journey-btn:hover{
     background-color: transparent;
     border: 1px solid #3ACEFF;
     color: #3ACEFF;
@@ -693,7 +699,7 @@ height: auto;
     border-radius: 10px;
     font-weight: 500;
     cursor: pointer;
-}
+} */
 
 
 .journey-image{
@@ -969,6 +975,18 @@ height: auto;
     color: #0B1A43;
 }
 
+.exit-btn{
+    background-color: #E91919;
+    color: #FFFFFF;
+    position: fixed;
+    right: 60px;
+    bottom: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
 
 
 
@@ -1035,6 +1053,10 @@ height: auto;
     
     .guideline-card2{
         margin: 30px auto;
+    }
+
+    .guideline-images img{
+        width: 250px;
     }
     
     .feature-img 
@@ -1273,7 +1295,7 @@ height: auto;
     }
     
     .guideline-images img{
-        width: 200px;
+        width: 250px;
     }
     
     .guideline-card{
@@ -1282,7 +1304,7 @@ height: auto;
     
     .guideline-card2{
         width: 700px;
-        margin: 0 auto;
+        margin: 50px auto;
     }
     
     .guideline-card3{
@@ -1369,9 +1391,7 @@ height: auto;
     }
     
     @media (max-width: 768px){
-        *{
-            /* border: 1px solid red; */
-        }
+       
     
          /* .nav-header, .hero-container, .features-container, .about-us-container, .experts-section-container, .choose-us-container, .guidelines-container, .footer-container{
             display: none;
@@ -1379,7 +1399,7 @@ height: auto;
     
         .menu-icon{
             display: block;
-            height: 30px;
+            height: 33px;
 
         }
     
@@ -1613,7 +1633,7 @@ height: auto;
     }
     
     .guideline-images img{
-        width: 130px;
+        width: 200px;
     }
     
     .guideline-account{
@@ -1832,6 +1852,10 @@ height: auto;
             padding: 2rem 2rem;
             min-height: auto;
         }
+
+        .exit-btn{
+    right: 15px;
+}
     
     }
 

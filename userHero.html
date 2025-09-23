@@ -20,7 +20,7 @@
 
 
          <div class="header image">
-            <img src="Landing page Assets/SafeAnchor Logo.svg" alt="SafeAnchor Logo" class="header-logo">
+            <img src="Landing page Assets/safe Anchor black.png" alt="SafeAnchor Logo" class="header-logo">
          </div>
 
          <div class="input-container">
@@ -37,6 +37,8 @@
             <!-- <i class="fa fa-bell"></i> -->
              <img src="Landing page Assets/Account-icon.png" alt="account-icon">
                 </div>
+
+                <span class="notification-count2">1+</span>
 
                 <div class="avatar-header">
                     <img src="Landing page Assets/search-icon.png" alt="search-icon" class="searchIcon">
@@ -66,6 +68,12 @@
                         <img src="Landing page Assets/Resources icon.png" alt="Resources-icon">
                         <span>Resources</span>
                     </div>
+                    <!-- I added the message icon -->
+                    <div class="menu">
+                        <img src="Landing page Assets/message-notify-icon.png" alt="message-icon" class="message-icon">
+                        <span>Messages</span>
+                    </div>
+                    <!-- stop -->
                     <div class="menu">
                         <img src="Landing page Assets/setting icon.png" alt="support-icon">
                         <span>Settings</span>
@@ -83,7 +91,7 @@
                     
                     <div class="exit-container">
                         <img src="Landing page Assets/exit image.png" alt="exit-icon">
-                         <a href="index(updated).html"><span>Quick Exit</span></a>
+                         <span>Quick Exit</span>
                     </div>
                 </div>
                 <!-- Calendar Container End -->
@@ -98,7 +106,7 @@
                 <div class="hero-section">
                     <div class="hero-text-content">
                         <span>Welcome</span>
-                        <h5>John Janet</h5>
+                        <h5 class='victimName'>John Janet</h5>
                         <p>We provide a safe space for you to share your story and find the help you need We are glad to have you here.</p>
                     </div>
 
@@ -224,9 +232,9 @@
                                     <div class="saftey-content">
                                         <div  class="saftey-tips">
                                             <div>
-                                                <img src="Landing page Assets/Arrow left image.png" alt="arrow left">
+                                                <img src="Landing page Assets/Arrow left image.png" alt="arrow left" id="safteyLeftIcon">
                                             </div>
-                                            <div>
+                                            <div class="tip1 active" id="tipContent1">
 
                                                 <h5>Safety & Privacy</h5>
                                                 <li>You’re always in control of what you share.</li>
@@ -234,9 +242,25 @@
                                                 <li>Your information is private and protected here.</li>
                                             </div>
 
+                                            <div class="tip1" id="tipContent2">
+
+                                                <h5>Encouragement</h5>
+                                                <li>It’s okay to pause and come back whenever you’re ready.</li>
+                                                <li>You are not alone. Many others are walking this path too.</li>
+                                                <li>Reaching out is a sign of strength, not weakness</li>
+                                            </div>
+
+                                            <div class="tip1" id="tipContent3">
+
+                                                <h5>Emotional Wellbeing</h5>
+                                                <li>Healing is not a race — take it one step at a time.</li>
+                                                <li>Small steps, like reading an article or joining a support group, count as progress.</li>
+                                                <li>Your feelings are valid, even if you can’t put them into words yet</li>
+                                            </div>
+
                                         </div>
                                     <div class="icon-container">
-                                        <img src="Landing page Assets/Arrow right image.png" alt="arrow right">
+                                        <img src="Landing page Assets/Arrow right image.png" alt="arrow right" id="safteyRightIcon">
                                     </div>
                                     </div>
                                 </div>
@@ -282,6 +306,44 @@
                             <div class="expert-info">
                                 <div><p class="expert-name">Dr. John Smith</p>
                                     <p class="expert-speciality">Social Worker</p>
+                                    </div>
+                                <div class="expert-icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+        
+                            <div class="expert-button-container">
+                                <button class="expert-btn">Book Session</button>
+                            </div>
+                        </div>
+
+                        <div class="user-experts">
+                            <div class="expert-img">
+                                <img src="Landing page Assets/Avatar 1.jpg" alt="avatar1">
+                            </div>
+                        
+                            <div class="expert-info">
+                                <div><p class="expert-name">Dr. Lara Chen</p>
+                                    <p class="expert-speciality">Therapist   </p>
+                                    </div>
+                                <div class="expert-icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+        
+                            <div class="expert-button-container">
+                                <button class="expert-btn">Book Session</button>
+                            </div>
+                        </div>
+
+                        <div class="user-experts">
+                            <div class="expert-img">
+                                <img src="Landing page Assets/Avatar 1.jpg" alt="avatar1">
+                            </div>
+                        
+                            <div class="expert-info">
+                                <div><p class="expert-name">Dr. Lara Chen</p>
+                                    <p class="expert-speciality">Therapist   </p>
                                     </div>
                                 <div class="expert-icon">
                                     <i class="fa-regular fa-heart"></i>
@@ -367,7 +429,7 @@
                             <button class="expert-btn">Book Session</button>
                         </div>
                     </div>
-                    <div class="user-experts">
+                    <div class="user-experts2">
                         <div class="expert-img">
                             <img src="Landing page Assets/Avatar 5.jpg" alt="avatar1">
                         </div>
@@ -385,7 +447,25 @@
                             <button class="expert-btn">Book Session</button>
                         </div>
                     </div>
-                    <div class="user-experts">
+                    <div class="user-experts2">
+                        <div class="expert-img">
+                            <img src="Landing page Assets/Avatar 5.jpg" alt="avatar1">
+                        </div>
+                    
+                        <div class="expert-info">
+                            <div><p class="expert-name">Dr. Micheal Paul</p>
+                                <p class="expert-speciality">psychologist</p>
+                                </div>
+                            <div class="expert-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+    
+                        <div class="expert-button-container">
+                            <button class="expert-btn">Book Session</button>
+                        </div>
+                    </div>
+                    <div class="user-experts2">
                         <div class="expert-img">
                             <img src="Landing page Assets/Avatar 2.jpg" alt="avatar1">
                         </div>
@@ -403,7 +483,25 @@
                             <button class="expert-btn">Book Session</button>
                         </div>
                     </div>
-                    <div class="user-experts">
+                    <div class="user-experts2">
+                        <div class="expert-img">
+                            <img src="Landing page Assets/Avatar 2.jpg" alt="avatar1">
+                        </div>
+                    
+                        <div class="expert-info">
+                            <div><p class="expert-name">Dr. Ayo Godwin</p>
+                                <p class="expert-speciality">psychologist</p>
+                                </div>
+                            <div class="expert-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+    
+                        <div class="expert-button-container">
+                            <button class="expert-btn">Book Session</button>
+                        </div>
+                    </div>
+                    <div class="user-experts2">
                         <div class="expert-img">
                             <img src="Landing page Assets/Avatar 2.jpg" alt="avatar1">
                         </div>
@@ -554,6 +652,153 @@
                    </div>
             </div>
             <!-- Resources Page End -->
+            <!-- Messages page starts -->
+             <div class="messages-area " id="messagesArea">
+<!-- User Chat Container Start -->
+ <h5 class="msg">Messages</h5>
+                <div class="user-chat-container " id="userChatMessages">
+                <div class="user-chats-header" id="userChatHeader">
+                    <div>
+                        <h5 class="chats-header active" id="chatHeader1">Chats</h5>
+                        <p class="chats-header" id="chatHeader2">Calls</p>
+
+                    </div>
+                    <img src="Landing page Assets/search-icon.png" alt="">
+                </div>
+                    <div class="user-chat-contents active" id="userChatContents">
+                        <div class="each-message-info">
+                            <div class="message-info">
+                                <img src="Landing page Assets/Avatar 1.jpg" alt="avatar image">
+                                <div class="user-chat-text">
+                                    <p>John Janet</p>
+                                    <span>How are you doing?</span>
+                                </div>
+                            </div>
+                            <div class="message-number">
+                                <p>01:20</p>
+                                <span>2</span>
+                            </div>
+                        </div>
+                        <div class="each-message-info">
+                            <div class="message-info">
+                                <img src="Landing page Assets/Avatar 1.jpg" alt="avatar image">
+                                <div class="user-chat-text">
+                                    <p>Bukola Jimoh</p>
+                                    <span>Good morning</span>
+                                </div>
+                            </div>
+                            <div class="message-number">
+                                <p>Yesterday</p>
+                                 <span>2</span> 
+                            </div> 
+                        </div>
+                        <div class="each-message-info">
+                            <div class="message-info">
+                                <img src="Landing page Assets/Avatar 1.jpg" alt="avatar image">
+                                <div class="user-chat-text">
+                                    <p>User Name</p>
+                                    <span>I want a session.</span>
+                                </div>
+                            </div>
+                            <div class="message-number">
+                                <p>Thursday</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="each-message-info">
+                            <div class="message-info">
+                                <img src="Landing page Assets/Avatar 1.jpg" alt="avatar image">
+                                <div class="user-chat-text">
+                                    <p>Michael</p>
+                                    <span>How is your day going?</span>
+                                </div>
+                            </div>
+                            <div class="message-number">
+                                <p>Friday</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="each-message-info">
+                            <div class="message-info">
+                                <img src="Landing page Assets/Avatar 1.jpg" alt="avatar image">
+                                <div class="user-chat-text">
+                                    <p>Mr Goodness</p>
+                                    <span>How are you doing?</span>
+                                </div>
+                            </div>
+                            <div class="message-number">
+                                <p>13:06</p>
+                                <span>4</span>
+                            </div>
+                        </div>
+                        <div class="each-message-info">
+                            <div class="message-info">
+                                <img src="Landing page Assets/Avatar 1.jpg" alt="avatar image">
+                                <div class="user-chat-text">
+                                    <p>Mr Goodness</p>
+                                    <span>How are you doing?</span>
+                                </div>
+                            </div>
+                            <div class="message-number">
+                                <p>13:06</p>
+                                <span>4</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-chat-contents " id="userCallsContents">
+                        <div class="each-call-info">
+                            <div class="call-info">
+                                <img src="Landing page Assets/Avatar 1.jpg" alt="avatar image">
+                                <div class="user-call-text">
+                                    <p>Bukola Jimoh</p>
+                                    <div class="missed-calls">
+                                        <img src="Landing page Assets/missed call.png" alt="missed call">
+                                        <span>Outgoing</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="call-number">
+                                <p>Yesterday</p>
+                            </div>
+                        </div>
+                        <div class="each-call-info">
+                            <div class="call-info">
+                                <img src="Landing page Assets/Avatar 1.jpg" alt="avatar image">
+                                <div class="user-call-text">
+                                    <p>Bukola Jimoh</p>
+                                    <div class="missed-calls">
+                                        <img src="Landing page Assets/missed call.png" alt="missed call">
+                                        <span>Outgoing</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="call-number">
+                                <p>Yesterday</p>
+                            </div>
+                        </div>
+                        <div class="each-call-info">
+                            <div class="call-info">
+                                <img src="Landing page Assets/Avatar 1.jpg" alt="avatar image">
+                                <div class="user-call-text">
+                                    <p>Bukola Jimoh</p>
+                                    <div class="missed-calls">
+                                        <img src="Landing page Assets/missed call red.png" alt="missed call">
+                                        <span>Missed</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="call-number">
+                                <p>Yesterday</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- User Chat Container End -->
+             </div>
+            <!-- Messages page end -->
             <!-- Notifications Page Start -->
             <div class="notification-area " id="notificationArea">
 <div class="notification-messages-container">
@@ -713,12 +958,15 @@
                         <div class="modal-content-header">
                             <div>
                                 <h5>Expert Session </h5>
-                                <div>
-                                    <p>Dr. Jane Doe
-                                        <span class="expert-title">Therapist</span>
-                                    </p>
-
-                            </div>
+                            <select id="expertSelect">
+                                <option value="Dr. Jane Doe">Dr. Jane Doe - Psychologist</option>
+                                <option value="Dr. Amina Yusuf">Dr. Amina Yusuf - Trauma Consoler</option>
+                                <option value="Dr. John Smith">Dr. John Smith - Social Worker</option>
+                                <option value="Dr. Lara Chen">Dr. Lara Chen - Therapist</option>
+                                <option value="Dr. Kwame Mensah">Dr. Kwame Mensah - Crisis Intervention</option>
+                                <option value="Dr. Micheal Paul">Dr. Micheal Paul - psychologist</option>
+                                <option value="Dr. Ayo Godwin">Dr. Ayo Godwin - psychologist</option>
+                            </select>
 
                             </div>
                             <div>
@@ -747,11 +995,11 @@
                                         <div class="DateTime-details">
                                             <div class="DateTime-detail-1">
                                                 <img src="Landing page Assets/booksession image.png" alt="booksession image">
-                                                <span>Mon 05/12</span>
+                                                <input type="date" id="bookingDate" class="booking-date">
                                             </div>
                                             <div class="DateTime-detail-2">
                                                 <img src="Landing page Assets/Time img.png" alt="time image">
-                                                <span>10:00</span>
+                                                <input type="time" id="bookingTime" class="booking-time">
                                             </div>
                                             <div class="change-details">
                                                 <span>Change Date</span>
@@ -795,7 +1043,7 @@
                                     <div class="modal2-booksession-info2">
                                         <div class="modal2-profile-image">
                                             <img src="Landing page Assets/Avatar 1.jpg" alt="Avatar 1">
-                                            <p>Chat Session with<span>Dr.Jane Doe</span></p>
+                                            <p>Chat Session with<span id="selectedExpert">Dr.Jane Doe</span></p>
                                         </div>
 
                                             <div class="modal2-DateTime-details">
@@ -840,6 +1088,92 @@
                             <p>Abuse isn’t always easy to recognize. Many people imagine abuse as only physical violence, but it can take many forms—emotional, verbal, financial, sexual, and psychological. Sometimes, the signs are subtle and disguised as love, concern, or control. If you’ve ever asked yourself, “Am I being abused?”, that question alone is worth exploring with compassion and honesty.</p>
                         </div>
 
+                        <div class="article-image2">
+                            <img src="Landing page Assets/Article image 2.jpg" alt="Article image 2" class="article-image2-image-link">
+                            <div class="article-link">
+                                <img src="Landing page Assets/link-01.png" alt="link image">
+                                <span>Image courtesy of Fauxels via Pexels</span>
+                            </div>
+                        </div>
+
+                        <div class="article-content2">
+                            <p>Abuse is about power and control. It often leaves you feeling small, powerless, or unsafe. Here are some common forms:</p>
+                        </div>
+
+                        <div class="article-content3">
+                            <h6>Emotional and Verbal Abuse</h6>
+                            <p>Constant criticism, name-calling, or humiliation.</p>
+                            <p>
+                                <p>Blaming you for everything that goes wrong.</p>
+                                <p>Using guilt or manipulation to control you.</p>
+                                <p>
+Gaslighting—making you doubt your own memories or feelings.</p>
+                        </div>
+
+                        <div class="article-content3">
+                            <h6> Physical Abuse</h6>
+                            <p>Hitting, slapping, pushing, or threatening violence.
+</p>
+<p>Restricting your movements, blocking exits, or intimidating with gestures.</p>
+<p>
+Destroying personal belongings to scare you.</p>
+                        </div>
+
+                        <div class="article-content3">
+                            <h6> Sexual Abuse</h6>
+                            <p>Forcing or pressuring you into sexual acts you don’t want.</p>
+<p>Ignoring your boundaries or dismissing consent.</p>
+<p>Using sex as a weapon, threat, or tool for control.</p>
+                        </div>
+
+                        <div class="article-content3">
+                            <h6>Financial Abuse</h6>
+                            <p>Taking control of all money and limiting your access.
+
+</p>
+<p>Preventing you from working or sabotaging your job.</p>
+<p>Using money to manipulate your choices or freedom.</p>
+                        </div>
+
+                        <div class="article-content3">
+                            <h6>Psychological Abuse</h6>
+                            <p>Isolating you from family, friends, or support systems.
+
+</p>
+<p>Monitoring your phone, messages, or social media.</p>
+<p>Threatening to harm themselves—or you—if you don’t comply.</p>
+                        </div>
+
+                        <div class="article-content4">
+                            <h5>How Abuse Makes You Feel</h5>
+
+                            <p>Abuse often leaves you questioning yourself. You might notice:</p>
+
+                            <ul>
+                                <li>Feeling anxious, fearful, or “on edge” around your partner or family member.</li>
+                                <li>Believing you are “not good enough” or that everything is your fault.
+Walking on eggshells to avoid conflict.</li>
+                                <li>Feeling trapped, helpless, or worthless.</li>
+                            </ul>
+
+                            <p>
+If these feelings sound familiar, it’s important to remind yourself: it is not your fault. Abuse is a choice made by the abuser, not a reflection of your value or worth.</p>
+                        </div>
+
+                        <div class="article-content3">
+                             <h6>What You Can Do</h6>
+                            <p>Trust your instincts. If something feels wrong, it probably is.
+</p>
+<p>
+Reach out for support. Confide in a trusted friend, family member, or counselor.</p>
+<p>Know your resources. In many places, hotlines and shelters are available 24/7.</p>
+<p>Plan for safety. If you are in immediate danger, call emergency services.</p>
+                        </div>
+                       
+                        <div class="article-content5">
+                        <h5>You Deserve Safety and Respect</h5>
+                            <p>Asking “Am I being abused?” is a powerful and courageous first step. Abuse thrives in silence, but healing begins with awareness. No one deserves to be controlled, harmed, or diminished. You deserve love, safety, and respect.</p>
+                        </div>
                 </div>
             </div>
             <!-- Articles Page End -->
@@ -860,24 +1194,43 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr><td class="col1">1.</td><td class="col2">Abia</td><td>07059951536</td></tr>
-                            <tr><td class="col1">2.</td><td class="col2">Adamawa</td><td>08065604764</td></tr>
-                            <tr><td class="col1">3.</td><td class="col2">Akwa Ibom</td><td>07039685410</td></tr>
-                            <tr><td class="col1">4.</td><td class="col2">Anambra</td><td>08039334002</td></tr>
-                            <tr><td class="col1">5.</td><td class="col2">Bauchi</td><td>08034844393</td></tr>
-                            <tr><td class="col1">6.</td><td class="col2">Bayelsa</td><td>07032702984</td></tr>
-                            <tr><td class="col1">7.</td><td class="col2">Benue</td><td>08065232481</td></tr>
-                            <tr><td class="col1">8.</td><td class="col2">Borno</td><td>09025437854</td></tr>
-                            <tr><td class="col1">9.</td><td class="col2">Cross River</td><td>08068559326</td></tr>
-                            <tr><td class="col1">10.</td><td class="col2">Delta</td><td>08131070122</td></tr>
-                            <tr><td class="col1">11.</td><td class="col2">Ebonyi</td><td>08032716251</td></tr>
-                            <tr><td class="col1">12.</td><td class="col2">Edo</td><td>08036363532</td></tr>
-                            <tr><td class="col1">13.</td><td class="col2">Ekiti</td><td>09064050086</td></tr>
-                            <tr><td class="col1">14.</td><td class="col2">Enugu</td><td>08063722988</td></tr>
-                            <tr><td class="col1">15.</td><td class="col2">Gombe</td><td>08038793973</td></tr>
-                            <tr><td class="col1">16.</td><td class="col2">Imo</td><td>08148024755</td></tr>
-                            <tr><td class="col1">17.</td><td class="col2">Jigawa</td><td>08109881890</td></tr>
-                            <tr><td class="col1">18.</td><td class="col2">Kaduna</td><td>08166405566</td></tr>
+                            <tr><td class="col1">1.</td><td class="col2">Abia State</td><td>07059951536</td></tr>
+                            <tr><td class="col1">2.</td><td class="col2">Adamawa State</td><td>08065604764</td></tr>
+                            <tr><td class="col1">3.</td><td class="col2">Akwa Ibom State</td><td>07039685410</td></tr>
+                            <tr><td class="col1">4.</td><td class="col2">Anambra State</td><td>08039334002</td></tr>
+                            <tr><td class="col1">5.</td><td class="col2">Bauchi State</td><td>08034844393</td></tr>
+                            <tr><td class="col1">6.</td><td class="col2">Bayelsa State</td><td>07032702984</td></tr>
+                            <tr><td class="col1">7.</td><td class="col2">Benue State</td><td>08065232481</td></tr>
+                            <tr><td class="col1">8.</td><td class="col2">Borno State</td><td>09025437854</td></tr>
+                            <tr><td class="col1">9.</td><td class="col2">Cross River State</td><td>08068559326 </td></tr>
+                            <tr><td class="col1">10.</td><td class="col2">Delta State</td><td>08131070122</td></tr>
+                            <tr><td class="col1">11.</td><td class="col2">Ebonyi State</td><td>08032716251</td></tr>
+                            <tr><td class="col1">12.</td><td class="col2">Edo State</td><td>08036363532</td></tr>
+                            <tr><td class="col1">13.</td><td class="col2">Ekiti State</td><td>09064050086</td></tr>
+                            <tr><td class="col1">14.</td><td class="col2">Enugu State</td><td>08063722988</td></tr>
+                            <tr><td class="col1">15.</td><td class="col2">Gombe State</td><td>08038793973</td></tr>
+                            <tr><td class="col1">16.</td><td class="col2">Imo State</td><td>08148024755</td></tr>
+                            <tr><td class="col1">17.</td><td class="col2">Jigawa State</td><td>08109881890</td></tr>
+                            <tr><td class="col1">18.</td><td class="col2">Kaduna State</td><td>08166405566</td></tr>
+                            <tr><td class="col1">19.</td><td class="col2">Kano State</td><td>08037742748</td></tr>
+                            <tr><td class="col1">20.</td><td class="col2">Katsina State</td><td>08133233534</td></tr>
+                            <tr><td class="col1">21.</td><td class="col2">Kebbi State</td><td>08065159812</td></tr>
+                            <tr><td class="col1">22.</td><td class="col2">Kogi State</td><td>08107899269</td></tr>
+                            <tr><td class="col1">23.</td><td class="col2">Kwara State</td><td>07032108353</td></tr>
+                            <tr><td class="col1">24.</td><td class="col2">Lagos State</td><td>07062606717</td></tr>
+                            <tr><td class="col1">25.</td><td class="col2">Nasarawa State</td><td>08037461715</td></tr>
+                            <tr><td class="col1">26.</td><td class="col2">Niger State</td><td>08032233454</td></tr>
+                            <tr><td class="col1">27.</td><td class="col2">Ogun State</td><td>09159578888</td></tr>
+                            <tr><td class="col1">28.</td><td class="col2">Oyo State</td><td>08068122698</td></tr>
+                            <tr><td class="col1">29.</td><td class="col2">Ondo State</td><td>08032188976</td></tr>
+                            <tr><td class="col1">30.</td><td class="col2">Osun State</td><td>07067790440</td></tr>
+                            <tr><td class="col1">31.</td><td class="col2">Plateau State</td><td>08060545670</td></tr>
+                            <tr><td class="col1">32.</td><td class="col2">Rivers State</td><td>08036219523</td></tr>
+                            <tr><td class="col1">33.</td><td class="col2">Sokoto State</td><td>08032861946</td></tr>
+                            <tr><td class="col1">34.</td><td class="col2">Taraba State</td><td>08141387931</td></tr>
+                            <tr><td class="col1">35.</td><td class="col2">Yobe State</td><td>08065682446</td></tr>
+                            <tr><td class="col1">36.</td><td class="col2">Zamfara State</td><td>07046444093</td></tr>
+                            <tr><td class="col1">37.</td><td class="col2">FCT Abuja</td><td>0703897934</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -1223,11 +1576,10 @@
                 <div class="calender-container">
                     <div class="header-calender">
                         <div class="month-year">
-                            <h5 class="month" id="currentMonth"></h5> <!-- e.g Auguest 2025 -->
-                            
-                            <img src="Landing page Assets/Arrow right image.png" alt="arrow left">
-                            
-                        </div>
+                            <h5 class="month" id="currentMonth"></h5> <!-- e.g August 2025 -->
+
+                            <img src="Landing page Assets/Arrow right image.png" alt="arrow left" class="month-year-arrow">
+
 
                         <div class="arrows">
                             <img src="Landing page Assets/Arrow left image.png" alt="arrow left" onclick="previousMonth()">
@@ -1265,200 +1617,116 @@
 
             </div>
         </div>
-
+</div>
             <!-- Chats Sidebar Start -->
-            <div class="right-sidebar " id="chatsSideBar">
+            <div class="right-sidebar " id="messageSideBar">
+                <!-- i removed the chats section here -->
+                 <div class="message-div">
+                     <div class="message-container">
+                         <div class="chats-area active" id="ChatMessageImg">
+                            <img src="Landing page Assets/chat-icon.png" alt="chat-icon">
+                            <p>Click on a contact to view their  messages</p>
+                         </div>
 
-                <!-- User Chat Container Start -->
-                <div class="user-chat-container active" id="userChatMessages">
-                <div class="user-chats-header" id="userChatHeader">
-                    <h5>Chats</h5>
-                </div>
-                    <div class="user-chat-contents">
-                        <div class="each-message-info">
-                            <div class="message-info">
-                                <img src="Landing page Assets/Avatar 1.jpg" alt="avatar image">
-                                <div class="user-chat-text">
-                                    <p>John Janet</p>
-                                    <span>How are you doing?</span>
-                                </div>
-                            </div>
-                            <div class="message-number">
-                                <p>01:20</p>
-                                <span>2</span>
-                            </div>
-                        </div>
-                        <div class="each-message-info">
-                            <div class="message-info">
-                                <img src="Landing page Assets/Avatar 1.jpg" alt="avatar image">
-                                <div class="user-chat-text">
-                                    <p>Bukola Jimoh</p>
-                                    <span>Good morning</span>
-                                </div>
-                            </div>
-                            <div class="message-number">
-                                <p>Yesterday</p>
-                                 <span>2</span> 
-                            </div> 
-                        </div>
-                        <div class="each-message-info">
-                            <div class="message-info">
-                                <img src="Landing page Assets/Avatar 1.jpg" alt="avatar image">
-                                <div class="user-chat-text">
-                                    <p>User Name</p>
-                                    <span>I want a session.</span>
-                                </div>
-                            </div>
-                            <div class="message-number">
-                                <p>Thursday</p>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="each-message-info">
-                            <div class="message-info">
-                                <img src="Landing page Assets/Avatar 1.jpg" alt="avatar image">
-                                <div class="user-chat-text">
-                                    <p>Michael</p>
-                                    <span>How is your day going?</span>
-                                </div>
-                            </div>
-                            <div class="message-number">
-                                <p>Friday</p>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="each-message-info">
-                            <div class="message-info">
-                                <img src="Landing page Assets/Avatar 1.jpg" alt="avatar image">
-                                <div class="user-chat-text">
-                                    <p>Mr Goodness</p>
-                                    <span>How are you doing?</span>
-                                </div>
-                            </div>
-                            <div class="message-number">
-                                <p>13:06</p>
-                                <span>4</span>
-                            </div>
-                        </div>
-                        <div class="each-message-info">
-                            <div class="message-info">
-                                <img src="Landing page Assets/Avatar 1.jpg" alt="avatar image">
-                                <div class="user-chat-text">
-                                    <p>Mr Goodness</p>
-                                    <span>How are you doing?</span>
-                                </div>
-                            </div>
-                            <div class="message-number">
-                                <p>13:06</p>
-                                <span>4</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- User Chat Container End -->
-
-                <!-- Chat Section Start -->
-                <section class="chat-section" id="chatAppContainer">
-                    <div class="chat-app-section">
-                        <div class="chat-app-header">
-                            <div class="profile-info">
-                                <img src="Landing page Assets/Avatar 7.png" alt="profile-picture">
-                                <div class="profile-name">
-                                    <p>Suporte ADMIN</p>
-                                    <span>#CU6798H</span>
-                                </div>
-                            </div>
-
-                            <div class="profile-icons">
-                                <img src="Landing page Assets/phone.png" alt="phone-call">
-                                <img src="Landing page Assets/videocam.png" alt="videocall">
-                                <img src="Landing page Assets/info.png" alt="information-image">
-                            </div>
-                        </div>
-
-                        <section>
-                            <div class="messages-container" >
-                                <div class="expert-message">
-                                    <img src="Landing page Assets/OP image.png" alt="OP image">
-                                    <div >
-                                        <div class="expert-text">
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                            
-                                        </div>
-                                        <div class="expert-message-time">
-                                            <span>8:00PM</span>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="user-message">
-                                    <div class="user-textmessages">
-                                        <div>
-                                            <div class="user-text">
-                                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                            </div>
-                                            <div class="user-message-time">
-                                                <span>8:00PM</span>
-                                                
-                                            </div>
-
-                                        </div>
-                                        <img src="Landing page Assets/Avatar 7.png" alt="OP image">
-                                    </div>
-                                </div>
-                                <div class="expert-message">
-                                    <img src="Landing page Assets/OP image.png" alt="OP image">
-                                    <div >
-                                        <div class="expert-text">
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                            
-                                        </div>
-                                        <div class="expert-message-time">
-                                            <span>8:00PM</span>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="user-message">
-                                    <div class="user-textmessages">
-                                        <div>
-                                            <div class="user-text">
-                                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                            </div>
-                                            <div class="user-message-time">
-                                                <span>8:00PM</span>
-                                                
-                                            </div>
-
-                                        </div>
-                                        <img src="Landing page Assets/Avatar 7.png" alt="OP image">
-                                    </div>
-                                </div>
-                                <div class="expert-typing">
-                                    <img src="Landing page Assets/OP image.png" alt="OP image">
-                                    <div>
-                                        <img src="Landing page Assets/typing dots.png" alt="typing dots">
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-
+                         <div class="chats-area" id="VideoCallImg">
+                            <img src="Landing page Assets/video cam.png" alt="chat-icon">
+                            <p>Click on a contact to view their  messages</p>
+                         </div>
                     </div>
                     
-                    <div class="chat-input-div">
-                        <input type="text" placeholder="Digite a mensagem">
-                        
-                        <div class="message-actions">
-                            <img src="Landing page Assets/send button.png" alt="send-button">
-                            <img src="Landing page Assets/attach-file.png" alt="attach-file">
-                            <img src="Landing page Assets/check.png" alt="check icon">
-                        </div >
-                    </div>
-                </section>
-                <!-- Chat Section End -->
+                 </div>
 
-        </div>
+                 <div class="message-div2">       
+                    <!-- <i class="fas fa-arrow-left" id="arrowLeftMessage"></i>                                     -->
+                      <div class="profiles">
+                        <div class="profile">
+                            <img src="Landing page Assets/Avatar 1.jpg" alt="Avatar 1">
+                            <span>Username</span>
+                        </div>
+
+                        <div class="profile-icons">
+                            <img src="Landing page Assets/phone.png" alt="phone-call">
+                            <img src="Landing page Assets/videocam.png" alt="videocall">
+                            <img src="Landing page Assets/info.png" alt="information-image">
+
+                        </div>
+                                             </div>
+                 
+                                         <section>
+                                             <div class="messages-container" >
+                                                 <!-- <div class="expert-message">
+                                                     <img src="Landing page Assets/OP image.png" alt="OP image">
+                                                     <div >
+                                                         <div class="expert-text">
+                                                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                                             
+                                                         </div>
+                                                         <div class="expert-message-time">
+                                                             <span>8:00PM</span>
+                                                             
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                                 <div class="user-message">
+                                                     <div class="user-textmessages">
+                                                         <div>
+                                                             <div class="user-text">
+                                                                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                                             </div>
+                                                             <div class="user-message-time">
+                                                                 <span>8:00PM</span>
+                                                                 
+                                                             </div>
+                 
+                                                         </div>
+                                                         <img src="Landing page Assets/Avatar 7.png" alt="OP image">
+                                                     </div>
+                                                 </div>
+                                                 <div class="expert-message">
+                                                     <img src="Landing page Assets/OP image.png" alt="OP image">
+                                                     <div >
+                                                         <div class="expert-text">
+                                                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                                             
+                                                         </div>
+                                                         <div class="expert-message-time">
+                                                             <span>8:00PM</span>
+                                                             
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                                 <div class="user-message">
+                                                     <div class="user-textmessages">
+                                                         <div>
+                                                             <div class="user-text">
+                                                                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                                             </div>
+                                                             <div class="user-message-time">
+                                                                 <span>8:00PM</span>
+                                                                 
+                                                             </div>
+                 
+                                                         </div>
+                                                         <img src="Landing page Assets/Avatar 7.png" alt="OP image">
+                                                     </div>
+                                                 </div> -->
+
+                                             </div>
+                                         </section>
+                 
+                                         
+                                        </div>
+                                        <div class="chat-input-div">
+                                            <input type="text" placeholder="Type your message here....">
+                                            
+                                            <div class="message-actions">
+                                                <img src="Landing page Assets/send button.png" alt="send-button">
+                                                <img src="Landing page Assets/attach-file.png" alt="attach-file">
+                                                <img src="Landing page Assets/check.png" alt="check icon">
+                                            </div >
+                                           </div>
+                                     
+                </div>
 
             <!-- Resources Area Contents Start -->
             <div class="right-sidebar " id="resourcesAreaContents">
@@ -1483,12 +1751,194 @@
 
                                 <p class="story-text3">Shared with permission, name withheld for privacy.</p>
                         </div>
+
+                        <div class="story2">
+                            <p class="story-text1">Learning to Breathe Again</p>
+                            <p class="story-text2">For years, I was made to feel small with words that cut deeper than anything else. I began to believe I wasn’t enough. With the help of a therapist I connected to here, I learned to challenge those thoughts and find my voice again. Today, I’m rebuilding my self-esteem, one step at a time.</p>
+
+                                <p class="story-text3">Shared with permission, name withheld for privacy.</p>
+                        </div>
+
+                        <div class="story2">
+                            <p class="story-text1">Words Don’t Define Me</p>
+                            <p class="story-text2">Every day I was told I was worthless. Over time, I started to believe it. Talking to a psychologist helped me understand that those words did not define me. I’ve found a community of support, and now I use affirmations to remind myself of my worth</p>
+
+                                <p class="story-text3">Shared with permission, name withheld for privacy.</p>
+                        </div>
                     </div>
                 </div>
         </div>
 
-    </div>
+    
     </main>
+
+    <!-- Expert Modal Profile -->
+    <div id="expertModal" class="expert-modal">
+        <span class="expert-modal-close">&times;</span>
+        <div class="expert-modal-content">
+            <div class="expert-modal-header">
+                <div class='Expert-Profile-Info'>
+                    <img src="Landing page Assets/Avatar 1.jpg" alt="">
+                    <div>
+                        <h5 id="expertName"></h5>
+                        <p id="expertAbout"></p>
+
+                    </div>
+                </div>
+<i class="fa-regular fa-heart"></i>
+
+            </div>
+            <div class="expert-details">
+                <h5>Details</h5>
+            </div>
+            <div>
+                <div class="expert-modal-tabs">
+                    <span class="expert-tab-btn active" data-tab="about">About</span>
+                    <span class="expert-tab-btn" data-tab="schedule">Schedule</span>
+                    <span class="expert-tab-btn" data-tab="sessions">Sessions</span>
+                    <span class="expert-tab-btn" data-tab="review">Review</span>
+                </div>
+
+                <div class="expert-about">
+                    <p>Hello, I’m <span id="expertName"></span>, a <span id="expertAbout"></span> dedicated to helping survivors of abuse reclaim their sense of safety, self-worth, and purpose. Over the past 12 years, I have worked with individuals who have experienced emotional, physical, and sexual abuse, guiding them through the journey from crisis to confidence.<br>
+      My approach blends trauma-informed therapy, cognitive behavioural techniques, and mindfulness-based practices to create a safe and supportive space where healing can begin</p>
+                </div>
+
+                <button class="expert-book-btn">Book Session</button>
+
+            </div>
+             <!--
+            <div class="expert-modal-body">
+                <div id="about" class="expert-tab-content active">
+                    <p id="expertAbout"></p>
+                </div>
+                <div id="schedule" class="expert-tab-content">
+                    <p>Schedule content here.</p>
+                </div>
+                <div id="sessions" class="expert-tab-content">
+                    <p>Sessions content here.</p>
+                </div>
+                <div id="review" class="expert-tab-content">
+                    <p>Review content here.</p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
 </body>
 <script src="userHero.js"> </script>
 </html>
+
+<!-- Do not delete -->
+  <!-- Modal Structure -->
+                <!-- <div id="bookModal-1" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-content-header">
+                            <div>
+                                <h5>Expert Session </h5>
+                                <div>
+                                    <p>Dr. Jane Doe
+                                        <span class="expert-title">Therapist</span>
+                                    </p>
+
+                            </div>
+
+                            </div>
+                            <div>
+                                <img src="Landing page Assets/Cancel-icon.png" alt="Cancel-icon" class="close">
+                            </div>
+
+                        </div>
+
+                            <div class="booksession-details">
+                                <div class="booksession-info">
+                                    <h5>Free</h5>
+                                    <div class="each-booksession-info">
+                                        <span>Session duration</span>
+                                        <p>30mins</p>
+                                    </div>
+                                    <div class="each-booksession-info">
+                                        <span>Session type</span>
+                                        <p>chat</p>
+                                    </div>
+                                </div>
+
+                                <div class="booksession-info2">
+                                    <h5>Confirm your booking</h5>
+                                    
+                                        <span>Date & Time</span>
+                                        <div class="DateTime-details">
+                                            <div class="DateTime-detail-1">
+                                                <img src="Landing page Assets/booksession image.png" alt="booksession image">
+                                                <span>Mon 05/12</span>
+                                            </div>
+                                            <div class="DateTime-detail-2">
+                                                <img src="Landing page Assets/Time img.png" alt="time image">
+                                                <span>10:00</span>
+                                            </div>
+                                            <div class="change-details">
+                                                <span>Change Date</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="reason-details">
+                                            <p>Reason for your session</p>
+                                            <textarea name="text" id="reason-text"></textarea>
+                                        </div>
+
+                                        <div class="question-details">
+                                            <p>Any questions?</p>
+                                            <textarea name="text" id="question-text"></textarea>
+                                        </div>
+                                  
+
+                                    <button type="submit" class="modal-btn" id="modalBtn1">Confirm Booking</button>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div id="bookModal-2" class="modal">
+                        <div class="modal-content">
+                            <div class="modal2-img">
+                            <img src="Landing page Assets/Cancel-icon.png" alt="Cancel-icon" class="close">
+                            </div>
+                            <div class="modal2-content-header">
+                                <h5>Booking requested</h5>
+                                <p>We sent a booking request to your Expert. if they accept, you will receive confirmation and invite.
+                                </p>
+                            </div>
+    
+                                <div class="modal2-booksession-details">
+    
+                                    <div class="modal2-booksession-info2">
+                                        <div class="modal2-profile-image">
+                                            <img src="Landing page Assets/Avatar 1.jpg" alt="Avatar 1">
+                                            <p>Chat Session with<span>Dr.Jane Doe</span></p>
+                                        </div>
+
+                                            <div class="modal2-DateTime-details">
+                                                <div class="modal2-DateTime-detail-1">
+                                                    <img src="Landing page Assets/booksession image.png" alt="booksession image">
+                                                    <span>Mon 05/12</span>
+                                                </div>
+                                                <div class="modal2-DateTime-detail-2">
+                                                    <img src="Landing page Assets/Time img.png" alt="time image">
+                                                    <span>10:00</span>
+                                                </div>
+                                            </div>
+    
+                                        <button type="submit" class="modal2-btn" id="modal2Btn">Confirm Booking</button>
+                                    </div>
+                                </div>
+    
+    
+    
+                            </div>
+    
+                        </div> -->
+            

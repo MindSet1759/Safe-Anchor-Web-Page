@@ -5,147 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="expertflow.css">
-    <title>Expert Form</title>
+    <title>Expert form</title>
 </head>
-<body>
-    <section class="form-section active" id="firstSection">
-       
-        <div class="form-image">
-            <img src="Landing page Assets/signin image.png" alt="Sign In Image">
-        </div>
-       
-            <img src="Landing page Assets/SafeAnchor Logo.svg" alt="Sign In Image" class="anchorlogo">
-       
-       
-        <div class="form-container1">
+
+<body id="ContentBody">
+  <!-- Toast notifications -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Loader -->
+  <div class="loader-container">
+    <span class="loader"></span>
+  </div>
+
+  <div id="notificationMessage" class="notification-message"></div>
 
 
-        <div class="form-container2">
+  <!-- Sign In -->
+  <section class="form-section active" id="firstSection">
+    <div class="form-image">
+      <img src="Landing page Assets/signin image.png" alt="Sign In Image">
+    </div>
+    <img src="Landing page Assets/SafeAnchor Logo.svg" alt="Logo" class="anchorlogo">
+
+    <div class="form-container1">
+      <div class="form-container2">
         <h1>Sign In</h1>
         <p>Sign in to your account</p>
-        <form>
-            <label for="email">Email Address</label><br>
-            <input type="text" id="email" name="email" required><br>
-           
-            <label for="password">Password</label><br>
-            <input type="password" id="password" name="password" required><br>
-            <span class="forget-password">Forgot password?</span>
-            <br><br>
-            <button class="sign-in-btn" id="signInBtn">Sign in</button><br>
-            <span class="sign-up">Dont have an Account? <a href="" class="sign-up-link" id="signUpLink">Sign up</a></span>
-            <!-- Fixed: Removed # from href to prevent unwanted navigation -->
+        <form id="signInForm">
+          <label for="signinEmail">Email Address</label><br>
+          <input type="email" id="signinEmail" name="email" required><br>
+
+          <label for="signinPassword">Password</label><br>
+          <input type="password" id="signinPassword" name="password" required><br>
+          <span class="forget-password" id="forgotPasswordLink">Forgot password?</span>
+          <br><br>
+          <button class="sign-in-btn" id="signInBtn">Sign in</button><br>
+          <span class="sign-up">Don’t have an Account? 
+            <a href="#" class="sign-up-link" id="signUpLink">Sign up</a>
+          </span>
         </form>
-   
-     </div>
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
+  <!-- Sign Up -->
+  <section class="form-section" id="secondSection">
+    <div class="form-image">
+      <img src="Landing page Assets/signin image.png" alt="Sign Up Image">
+    </div>
+    <img src="Landing page Assets/SafeAnchor Logo.svg" alt="Logo" class="anchorlogo">
 
-
-
-    <section class="form-section" id="secondSection">
-       
-        <div class="form-image">
-            <img src="Landing page Assets/signin image.png" alt="Sign In Image">
-        </div>
-        <img src="Landing page Assets/SafeAnchor Logo.svg" alt="Sign In Image" class="anchorlogo">
-       
-       
-       
-        <div class="form-container1">
-
-
-        <div class="form-container2">
+    <div class="form-container1">
+      <div class="form-container2">
         <h1>Create An Account</h1>
         <p>Create an account to use <span class="emphasis">SafeAnchor</span></p>
-        <button class="register-btn" id="registerBtn"><i class="fab fa-google"></i> Continue with Google</button>
-        <div class="alternative">
-            <span class="line-through1"></span><span class="or">OR</span><span class="line-through2"></span>
-        </div>
-        <form>
-            <label for="email">Email Address</label><br>
-            <input type="email" id="email" name="email" required><br>
+        
+        <form id="signUpForm">
+          <label for="signupEmail">Email Address</label><br>
+          <input type="email" id="signupEmail" name="email" required><br>
 
+          <label for="signupUserName">Username</label><br>
+          <input type="text" id="signupUserName" name="username" required><br>
 
-            <label for="fullName">Full Name</label><br>
-            <input type="text" id="name" name="name" required><br>
+          <label for="signupFirstName">First Name</label><br>
+          <input type="text" id="signupFirstName" name="firstName" required><br>
 
+          <label for="signupLastName">Last Name</label><br>
+          <input type="text" id="signupLastName" name="lastName" required><br>
 
-            <label for="location">Location</label><br>
-            <input type="text" id="location" name="location" required><br>
+          <label for="signupNumber">Phone Number</label><br>
+          <input type="tel" id="signupNumber" name="number" required><br>
 
+          <label for="signupUserType">UserType</label><br>
+          <input type="text" id="signupUserType" name="userType" required><br>
 
+          <label for="signupSpecialization">Specialization</label><br>
+          <input type="text" id="signupSpecialization" name="specialization" required><br>
 
+          <label for="signupPassword">Password</label><br>
+          <input type="password" id="signupPassword" name="password" required><br>
 
-            <label for="number">Phone Number</label><br>
-            <input type="tel" id="number" name="number" required><br>
+          <label for="signupConfirmPassword">Confirm Password</label><br>
+          <input type="password" id="signupConfirmPassword" name="confirmPassword" required><br><br>
 
-
-            <label for="password">Password</label><br>
-            <input type="password" id="password" name="password" required><br>
-
-
-<label for="password">Confirm Password</label><br>
-<input type="password" id="password" name="password" required><br><br>
-<!-- Fixed: Changed from id="signUpBtn" to class="signUpBtn" to avoid duplicate IDs and ensure proper event listener attachment -->
-<button class="sign-in-btn signUpBtn">Sign Up</button><br>
-            <span class="sign-up">Already have an Account? <a href="#" class="sign-up-link" id="signInBtn2">Sign in</a></span>
+          <button class="sign-in-btn" id="signUpBtn">Sign Up</button><br>
+          <span class="sign-up">Already have an Account? 
+            <a href="#" class="sign-up-link" id="signInLink">Sign in</a>
+          </span>
         </form>
-   
-     </div>
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
 
-    <section class="form-section" id="thirdSection">
-
-
-        <div class="form-image">
-            <img src="Landing page Assets/signin image.png" alt="Sign In Image">
-        </div>
-        <img src="Landing page Assets/SafeAnchor Logo.svg" alt="Sign In Image" class="anchorlogo">
-
-
-
-
-        <div class="form-container1">
-
-
-        <div class="form-container2">
-        <h1>Create An Account</h1>
-        <p>Create an account to use <span class="emphasis">SafeAnchor</span></p>
-       
-        <form>
-            <label for="username">Username</label><br>
-            <input type="text" id="username" name="username" required><br>
-
-
-            <label for="email">Email Address</label><br>
-            <input type="email" id="email" name="email" required><br>
-
-
-            <label for="number">Phone Number</label><br>
-            <input type="tel" id="number" name="number" required><br>
-
-
-            <label for="password">Password</label><br>
-            <input type="password" id="password" name="password" required><br>
-
-
-<label for="password">Confirm Password</label><br>
-<input type="password" id="password" name="password" required><br><br>
-<!-- Fixed: Changed from id="signUpBtn" to class="signUpBtn" to avoid duplicate IDs and ensure proper event listener attachment -->
-<button class="sign-in-btn signUpBtn">Sign Up</button><br>
-            <span class="sign-up">Already have an Account? <a href="#" class="sign-up-link" id="signInBtn3">Sign in</a></span>
-        </form>
-
-
-     </div>
-        </div>
-    </section>
-
-
-    <section id="notificationSection" class="notification-section ">
+    <!-- <section id="notificationSection" class="notification-section ">
      <div class="notification-container">
         <div class="cancel-icon">
             <i class="fas fa-times"></i>
@@ -163,27 +116,45 @@
             <span class="email-error">Didn't get the mail</span><span class="resend-email">Resend email</span>
         </div>
      </div>
-    </section>
+    </section> -->
+
+    <!-- <section id="EmailSection" class="hidden">
+        <h2>Email Verification</h2>
+        <p>We sent a verification code to your email. Please enter it below:</p>
+        <form id="verifyEmailForm">
+            <input type="text" id="verificationCode" placeholder="Enter verification code" required>
+            <button type="submit">Verify Email</button>
+        </form>
+    </section> -->
 
 
-    <section id="EmailSection" class="notification-section ">
+
+    <section id="EmailSection" class="notification-section hidden">
      <div class="notification-container">
         <div class="cancel-icon">
-            <i class="fas fa-times"></i>
+            <!-- <i class="fas fa-times"></i> -->
+            <img src="Landing page Assets/Cancel-icon.png" alt="Cancel-icon">
         </div>
         <div class="notification-image">
-            <img src="Landing page Assets/Bookmark image.png" alt="Bookmark Image">
+            <img src="Landing page Assets/Message.png" alt="Bookmark Image">
         </div>
-        <div class="email-content">
-            <h5>Awesome</h5>
-            <p> You're ready to use SafeAnchor</p>
-        </div>
-        <button class="start-btn" id="startBtn">Start</button>
+        <h5>Email Verification</h5>
+        <p>Please enter the verification code sent to your email.</p>
+        <form id="verifyEmailForm">
+            <input type="text" id="verificationCode" name="verificationCode" maxlength="6" required>
+            <button type="submit" class="start-btn" id="startBtn">Verify</button>
+        </form>
+        <div class="line"></div>
+          <div class="error-alternative">
+            <span class="email-error">Didn't get the mail?</span><span class="resend-email" id="resendEmail">Resend email</span>
+          </div>
+        <div class="error-message" id="verification-error" style="color: #E91919; display: none; margin-top: 10px; text-align: center;"></div>
      </div>
+     
     </section>
 
 
-    <section id="expertQuestionnaire" class="notification-section " data-type="expertise">
+    <section id="expertQuestionnaire" class="notification-section" data-type="expertise">
      <div class="questionnaire-container">
         <div class="questionnaire-header">
             <h5>Professional Background</h5>
@@ -204,6 +175,7 @@
 
         </div>
         <button class="next-btn" id="expertiseNextBtn">Next</button>
+        <button class="back-btn" id="expertiseBackBtn">Back</button>
      </div>
     </section>
 
@@ -225,6 +197,7 @@
             <label for="time4">Anytime</label><br>
         </div>
         <button class="next-btn" id="timeNextBtn">Next</button>
+        <button class="back-btn" id="timeBackBtn">Back</button>
      </div>
     </section>
 
@@ -246,6 +219,7 @@
             <label for="work4">Not at all</label><br>
         </div>
         <button class="next-btn" id="workNextBtn">Next</button>
+        <button class="back-btn" id="workBackBtn">Back</button>
      </div>
    </section> <!-- The closing tag </section> wasnt there before so if you click next, it will go blank, so i added it-->
 
@@ -269,6 +243,7 @@
             <label for="support5">Resource referral</label><br>
         </div>
         <button class="next-btn" id="supportNextBtn">Next</button>
+        <button class="back-btn" id="supportBackBtn">Back</button>
      </div>
     </section>
 
@@ -288,6 +263,7 @@
             <label for="training3">Not sure</label><br>
         </div>
         <button class="next-btn" id="trainingNextBtn">Next</button>
+        <button class="back-btn" id="trainingBackBtn">Back</button>
      </div>
     </section>
 
@@ -305,6 +281,7 @@
             <label for="experience2">No</label><br>
         </div>
         <button class="next-btn" id="experienceNextBtn">Next</button>
+        <button class="back-btn" id="experienceBackBtn">Back</button>
      </div>
     </section>
 
@@ -321,6 +298,7 @@
             <label for="certificate">Upload Certificate</label><br>
         </div>
         <button class="next-btn" id="certificateNextBtn">Next</button>
+        <button class="back-btn" id="certificateBackBtn">Back</button>
      </div>
     </section>
 
@@ -336,6 +314,7 @@
             <input type="file" id="CV" accept=".pdf,.doc,.docx" />
             <label for="CV">Upload CV</label><br>
         <button class="next-btn" id="CVNextBtn">Next</button>
+        <button class="back-btn" id="CVBackBtn">Back</button>
      </div>
     </section>
 
@@ -343,7 +322,7 @@
     <section id="genderQuestionnaire" class="notification-section " data-type="gender">
      <div class="questionnaire-container">
         <div class="questionnaire-header">
-            <h5>Help Us Match you with your patients.</h5>
+            <h5>Professional Background</h5>
         </div>
         <div class="questionnaire-content">
             <h5>What's your Gender</h5>
@@ -353,9 +332,14 @@
             <label for="gender2">Female</label><br>
            
         </div>
-        <a href="home.html" class="next-btn" id="genderNextBtn">Start</a>
+        <button class="next-btn" id="genderNextBtn">Start</button>
+
      </div>
     </section>
+
+    <!-- Add this just before closing </body> -->
+    <div class="toast-container" id="toastContainer"></div>
+
 
 
     <!-- Fixed: Changed script src from "expressflow.js" to "expertflow.js" to match the correct filename -->

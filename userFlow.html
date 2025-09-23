@@ -8,13 +8,21 @@
     <title>User form</title>
 </head>
 <body id="ContentBody">
+    <div class="loader-container" >
+        <span class="loader"></span>
+    </div>
+
+    <div id="notificationMessage" class="notification-message">
+
+    </div>
+
     <section class="form-section active" id="firstSection">
         
         <div class="form-image">
-            <img src="Landing page Assets/signin image.png" alt="Sign In Image">
+            <img src="Landing page Assets/image fix.png" alt="Sign In Image">
         </div>
         
-            <img src="Landing page Assets/SafeAnchor Logo.svg" alt="Sign In Image" class="anchorlogo">
+            <!-- <img src="Landing page Assets/SafeAnchor Logo.svg" alt="Sign In Image" class="anchorlogo"> -->
         
         
         <div class="form-container1">
@@ -22,29 +30,28 @@
         <div class="form-container2">
         <h1>Sign In</h1>
         <p>Sign in to your account</p>
-        <form>
-            <label for="email">Email Address</label><br>
-            <input type="text" id="email" name="email" required><br>
-            
-            <label for="password">Password</label><br>
-            <input type="password" id="password" name="password" required><br>
+        <form class="signInForm">
+            <label for="signin-username">Username</label><br>
+            <input type="text" id="signin-username" name="username" required><br>
+
+            <label for="signin-password">Password</label><br>
+            <input type="password" id="signin-password" name="password" required><br>
             <span class="forget-password">Forgot password?</span>
             <br><br>
-            <button class="sign-in-btn" id="signUpBtn">Sign in</button><br>
-            <span class="sign-up">Dont have an Account? <a href="#" class="sign-up-link" id="signUpLink">Sign up</a></span>
+            <button class="sign-in-btn" id="signin-submit-btn">Sign in</button><br>
+            <span class="sign-up">Dont have an Account? <a href="userHero.html" class="sign-up-link" id="signin-signup-link">Sign up</a></span>
         </form>
     
      </div>
         </div>
     </section>
-
 
     <section class="form-section" id="secondSection">
         
         <div class="form-image">
-            <img src="Landing page Assets/signin image.png" alt="Sign In Image">
+            <img src="Landing page Assets/image fix.png" alt="Sign In Image">
         </div>
-        <img src="Landing page Assets/SafeAnchor Logo.svg" alt="Sign In Image" class="anchorlogo">
+        <!-- <img src="Landing page Assets/SafeAnchor Logo.svg" alt="Sign In Image" class="anchorlogo"> -->
         
         
         
@@ -53,76 +60,74 @@
         <div class="form-container2">
         <h1>Create An Account</h1>
         <p>Create an account to use <span class="emphasis">SafeAnchor</span></p>
-        <button class="register-btn" id="registerBtn">Register With Username</button>
+        <!-- <button class="register-btn" id="signup-email-register-btn">Register With Username</button>
         <div class="alternative">
             <span class="line-through1"></span><span class="or">OR</span><span class="line-through2"></span>
-        </div>
+        </div> -->
         <form>
-            <label for="email">Email Address</label><br>
-            <input type="email" id="email" name="email" required><br>
+            <!-- Add required attribute -->
+            <label for="signup-email-email">Email Address</label><br>
+            <input type="email" id="signup-email-email" name="email" ><br>
 
-            <label for="fullName">Full Name</label><br>
-            <input type="text" id="name" name="name" required><br>
+            <label for="signup-email-username">Username</label><br>
+            <input type="text" id="signup-email-username" name="username" ><br>
 
-            <label for="number">Phone Number</label><br>
-            <input type="tel" id="number" name="number" required><br>
+            <label for="signup-email-firstname">First Name</label><br>
+            <input type="text" id="signup-email-firstname" name="firstname" ><br>
 
-            <label for="password">Password</label><br>
-            <input type="password" id="password" name="password" required><br>
+            <label for="signup-email-lastname">Last Name</label><br>
+            <input type="text" id="signup-email-lastname" name="lastname" ><br>
 
-            <label for="password">Confirm Password</label><br>
-            <input type="password" id="password" name="password" required><br><br>
+            <label for="signup-email-phone">Phone Number</label><br>
+            <input type="tel" id="signup-email-phone" name="number" ><br>
 
-            <button class="sign-in-btn" id="signUpBtn">Sign Up</button><br>
-            <span class="sign-up">Already have an Account? <a href="#" class="sign-up-link" id="signInBtn2">Sign in</a></span>
+            <label for="signup-email-password">Password</label><br>
+            <input type="password" id="signup-email-password" name="password" ><br>
+
+            <label for="signup-email-confirm-password">Confirm Password</label><br>
+            <input type="password" id="signup-email-confirm-password" name="password" ><br><br>
+
+            <button class="sign-in-btn" id="signup-email-submit-btn">Sign Up</button><br>
+            <span class="sign-up">Already have an Account? <a href="#" class="sign-up-link" id="signup-email-signin-link">Sign in</a></span>
         </form>
     
      </div>
         </div>
     </section>
 
-    <section class="form-section" id="thirdSection">
+    <section class="form-section " id="thirdSection">
 
         <div class="form-image">
-            <img src="Landing page Assets/signin image.png" alt="Sign In Image">
+            <img src="Landing page Assets/image fix.png" alt="Sign In Image">
         </div>
-        <img src="Landing page Assets/SafeAnchor Logo.svg" alt="Sign In Image" class="anchorlogo">
+        <!-- <img src="Landing page Assets/SafeAnchor Logo.svg" alt="Sign In Image" class="anchorlogo"> -->
 
 
         <div class="form-container1">
 
         <div class="form-container2">
-        <h1>Create An Account</h1>
-        <p>Create an account to use <span class="emphasis">SafeAnchor</span></p>
-        
+        <h1>Log In</h1>
+        <p>Log in to your account</p>
+
         <form>
-            <label for="username">Username</label><br>
-            <input type="text" id="username" name="username" required><br>
+            <label for="login-username">Username</label><br>
+            <input type="text" id="login-username" name="username" required><br>
 
-            <label for="email">Email Address</label><br>
-            <input type="email" id="email" name="email" required><br>
+            <label for="login-password">Password</label><br>
+            <input type="password" id="login-password" name="password" required><br><br>
 
-            <label for="number">Phone Number</label><br>
-            <input type="tel" id="number" name="number" required><br>
-
-            <label for="password">Password</label><br>
-            <input type="password" id="password" name="password" required><br>
-
-            <label for="password">Confirm Password</label><br>
-            <input type="password" id="password" name="password" required><br><br>
-
-            <button class="sign-in-btn" id="signUpBtn">Sign Up</button><br>
-            <span class="sign-up">Already have an Account? <a href="#" class="sign-up-link" id="signInBtn3">Sign in</a></span>
+            <button class="sign-in-btn" id="login-submit-btn">Log In</button><br>
+            <span class="sign-up">Dont have an Account? <a href="#" class="sign-up-link" id="login-signup-link">Sign up</a></span>
         </form>
 
      </div>
         </div>
     </section>
 
-    <section id="notificationSection" class="notification-section ">
+    <!-- <section id="notificationSection" class="notification-section ">
      <div class="notification-container">
         <div class="cancel-icon">
-            <i class="fas fa-times"></i>
+            <img src="Landing page Assets/Cancel-icon.png" alt="Cancel-icon">
         </div>
         <div class="notification-image">
             <img src="Landing page Assets/Message.png" alt="Success Image">
@@ -131,27 +136,64 @@
             <h5>Email Verification</h5>
             <p> We've sent a verification link to your email. Please check your inbox and click the link to verify your account.</p>
         </div>
-        <button class="ok-btn" id="okBtn">OK</button>
+        <button class="ok-btn" id="notification-ok-btn">OK</button>
         <div class="line"></div>
         <div class="error-alternative">
             <span class="email-error">Didn't get the mail</span><span class="resend-email">Resend email</span>
         </div>
      </div>
-    </section>
+    </section> -->
 
-    <section id="EmailSection" class="notification-section ">
+    <!-- <section>
+    <img src="Landing page Assets/Cancel-icon.png" alt="Cancel-icon">
+            
+         </div>
+         <div class="notification-image">
+-            <img src="Landing page Assets/Bookmark image.png" alt="Bookmark Image">
+         </div>
+-        <div class="email-content">
+-            <h5>Awesome</h5>
+-            <p> You're ready to use SafeAnchor</p>
++        <div class="verification-content">
++            <h5>Email Verification</h5>
++            <p>Please enter the verification code sent to your email.</p>
++            <form id="verification-form">
++                <input type="text" id="verification-code" name="verification-code" maxlength="6" placeholder="Enter 6-digit code" required pattern="\\d{6}">
++                <button type="submit" class="start-btn" id="verification-submit-btn">Verify</button>
++            </form>
++            <div class="error-message" id="verification-error" style="color: #E91919; display: none; margin-top: 10px; text-align: center;"></div>
+         </div>
+-        <button class="start-btn" id="notification-start-btn">Start</button>
++        <div class="line"></div>
++        <div class="error-alternative">
++            <span class="email-error">Didn't get the code?</span><span class="resend-email">Resend code</span>
++        </div>
+      </div>
+     </section> -->
+
+    <section id="notificationSection" class="notification-section ">
      <div class="notification-container">
         <div class="cancel-icon">
-            <i class="fas fa-times"></i>
+            <img src="Landing page Assets/Cancel-icon.png" alt="Cancel-icon">
+            <!-- <i class="fas fa-times"></i> -->
         </div>
         <div class="notification-image">
-            <img src="Landing page Assets/Bookmark image.png" alt="Bookmark Image">
+            <img src="Landing page Assets/Message.png" alt="Verification Code Image">
         </div>
-        <div class="email-content">
-            <h5>Awesome</h5>
-            <p> You're ready to use SafeAnchor</p>
+        <div class="verification-content">
+            <h5>Email Verification</h5>
+            <p>Please enter the verification code sent to your email.</p>
+            <form id="verification-form">
+                <input type="text" id="verification-code" name="verification-code" maxlength="6" placeholder="Enter 6-digit code"  > 
+                <!-- Add required -->
+                <button type="submit" class="start-btn" id="verification-submit-btn">Verify</button>
+            </form>
+            <div class="error-message" id="verification-error" style="color: #E91919; display: none; margin-top: 10px; text-align: center;"></div>
         </div>
-        <button class="start-btn" id="startBtn">Start</button>
+        <div class="line"></div>
+        <div class="error-alternative">
+            <span class="email-error">Didn't get the code?</span><span class="resend-email">Resend code</span>
+        </div>
      </div>
     </section>
 
@@ -162,16 +204,16 @@
         </div>
         <div class="questionnaire-content">
             <h5>What brings you here today?</h5>
-            <input type="checkbox" id="purpose1" name="purpose" value="talk-to-professional">
-            <label for="purpose1">I need to talk to a professional.</label><br>
-            <input type="checkbox" id="purpose2" name="purpose" value="supporting-loved-one">
-            <label for="purpose2">I'm supporting a loved one who is experiencing abuse.</label><br>
-            <input type="checkbox" id="purpose3" name="purpose" value="safe-space">
-            <label for="purpose3">I'm not sure, I just need a safe space.</label><br>
-            <input type="checkbox" id="purpose4" name="purpose" value="learn-more">
-            <label for="purpose4">I want to learn more about abuse and recovery.</label><br>
+            <input type="checkbox" id="questionnaire-purpose-1" name="purpose" value="talk-to-professional">
+            <label for="questionnaire-purpose-1">I need to talk to a professional.</label><br>
+            <input type="checkbox" id="questionnaire-purpose-2" name="purpose" value="supporting-loved-one">
+            <label for="questionnaire-purpose-2">I'm supporting a loved one who is experiencing abuse.</label><br>
+            <input type="checkbox" id="questionnaire-purpose-3" name="purpose" value="safe-space">
+            <label for="questionnaire-purpose-3">I'm not sure, I just need a safe space.</label><br>
+            <input type="checkbox" id="questionnaire-purpose-4" name="purpose" value="learn-more">
+            <label for="questionnaire-purpose-4">I want to learn more about abuse and recovery.</label><br>
         </div>
-        <button class="next-btn" id="purposeNextBtn">Next</button>
+        <button class="next-btn" id="questionnaire-purpose-next-btn">Next</button>
      </div>
     </section>
 
@@ -182,17 +224,17 @@
         </div>
         <div class="questionnaire-content">
             <h5>When do you usually feel most comfortable reaching out?</h5>
-            <input type="checkbox" id="time1" name="time-preference" value="morning">
-            <label for="time1">Morning</label><br>
-            <input type="checkbox" id="time2" name="time-preference" value="afternoon">
-            <label for="time2">Afternoon</label><br>
-            <input type="checkbox" id="time3" name="time-preference" value="evening">
-            <label for="time3">Evening</label><br>
-            <input type="checkbox" id="time4" name="time-preference" value="anytime">
-            <label for="time4">Anytime</label><br>
+            <input type="checkbox" id="questionnaire-time-1" name="time-preference" value="morning">
+            <label for="questionnaire-time-1">Morning</label><br>
+            <input type="checkbox" id="questionnaire-time-2" name="time-preference" value="afternoon">
+            <label for="questionnaire-time-2">Afternoon</label><br>
+            <input type="checkbox" id="questionnaire-time-3" name="time-preference" value="evening">
+            <label for="questionnaire-time-3">Evening</label><br>
+            <input type="checkbox" id="questionnaire-time-4" name="time-preference" value="anytime">
+            <label for="questionnaire-time-4">Anytime</label><br>
         </div>
-        <button class="next-btn" id="timeNextBtn">Next</button>
-        <button class="back-btn">Back</button>
+        <button class="next-btn" id="questionnaire-time-next-btn">Next</button>
+        <button class="back-btn" id="questionnaire-time-back-btn">Back</button>
      </div>
     </section>
 
@@ -203,17 +245,17 @@
         </div>
         <div class="questionnaire-content">
             <h5>Which type of support are you seeking?</h5>
-            <input type="checkbox" id="support1" name="support-type" value="emotional">
-            <label for="support1">Emotional support (counselor, therapist).</label><br>
-            <input type="checkbox" id="support2" name="support-type" value="physical">
-            <label for="support2">Physical recovery (physiotherapist, medical expert).</label><br>
-            <input type="checkbox" id="support3" name="support-type" value="general">
-            <label for="support3">General advice/resources.</label><br>
-            <input type="checkbox" id="support4" name="support-type" value="not-sure">
-            <label for="support4">Not sure yet.</label><br>
+            <input type="checkbox" id="questionnaire-support-1" name="support-type" value="emotional">
+            <label for="questionnaire-support-1">Emotional support (counselor, therapist).</label><br>
+            <input type="checkbox" id="questionnaire-support-2" name="support-type" value="physical">
+            <label for="questionnaire-support-2">Physical recovery (physiotherapist, medical expert).</label><br>
+            <input type="checkbox" id="questionnaire-support-3" name="support-type" value="general">
+            <label for="questionnaire-support-3">General advice/resources.</label><br>
+            <input type="checkbox" id="questionnaire-support-4" name="support-type" value="not-sure">
+            <label for="questionnaire-support-4">Not sure yet.</label><br>
         </div>
-        <button class="next-btn" id="supportNextBtn">Next</button>
-        <button class="back-btn">Back</button>
+        <button class="next-btn" id="questionnaire-support-next-btn">Next</button>
+        <button class="back-btn" id="questionnaire-support-back-btn">Back</button>
      </div>
     </section>
 
@@ -224,19 +266,19 @@
         </div>
         <div class="questionnaire-content">
             <h5>Identify your type of abuse</h5>
-            <input type="checkbox" id="abuse1" name="abuse-type" value="physical">
-            <label for="abuse1">Physical Abuse</label><br>
-            <input type="checkbox" id="abuse2" name="abuse-type" value="sexual">
-            <label for="abuse2">Sexual abuse</label><br>
-            <input type="checkbox" id="abuse3" name="abuse-type" value="domestic">
-            <label for="abuse3">Domestic violence or abuse</label><br>
-            <input type="checkbox" id="abuse4" name="abuse-type" value="psychological">
-            <label for="abuse4">Psychological or emotional abuse</label><br>
-            <input type="checkbox" id="abuse5" name="abuse-type" value="others">
-            <label for="abuse5">Others</label><br>
+            <input type="checkbox" id="questionnaire-abuse-1" name="abuse-type" value="physical">
+            <label for="questionnaire-abuse-1">Physical Abuse</label><br>
+            <input type="checkbox" id="questionnaire-abuse-2" name="abuse-type" value="sexual">
+            <label for="questionnaire-abuse-2">Sexual abuse</label><br>
+            <input type="checkbox" id="questionnaire-abuse-3" name="abuse-type" value="domestic">
+            <label for="questionnaire-abuse-3">Domestic violence or abuse</label><br>
+            <input type="checkbox" id="questionnaire-abuse-4" name="abuse-type" value="psychological">
+            <label for="questionnaire-abuse-4">Psychological or emotional abuse</label><br>
+            <input type="checkbox" id="questionnaire-abuse-5" name="abuse-type" value="others">
+            <label for="questionnaire-abuse-5">Others</label><br>
         </div>
-        <button class="next-btn" id="abuseNextBtn">Next</button>
-        <button class="back-btn">Back</button>
+        <button class="next-btn" id="questionnaire-abuse-next-btn">Next</button>
+        <button class="back-btn" id="questionnaire-abuse-back-btn">Back</button>
      </div>
     </section>
 
@@ -247,19 +289,19 @@
         </div>
         <div class="questionnaire-content">
             <h5>What kind of help or support would you be most interested in?</h5>
-            <input type="checkbox" id="help1" name="help-type" value="counseling">
-            <label for="help1">One-on-one counseling</label><br>
-            <input type="checkbox" id="help2" name="help-type" value="group-support">
-            <label for="help2">Group support or forums</label><br>
-            <input type="checkbox" id="help3" name="help-type" value="educational">
-            <label for="help3">Educational resources</label><br>
-            <input type="checkbox" id="help4" name="help-type" value="emergency">
-            <label for="help4">Emergency hotlines</label><br>
-            <input type="checkbox" id="help5" name="help-type" value="anonymous-talk">
-            <label for="help5">Just someone to talk to anonymously</label><br>
+            <input type="checkbox" id="questionnaire-help-1" name="help-type" value="counseling">
+            <label for="questionnaire-help-1">One-on-one counseling</label><br>
+            <input type="checkbox" id="questionnaire-help-2" name="help-type" value="group-support">
+            <label for="questionnaire-help-2">Group support or forums</label><br>
+            <input type="checkbox" id="questionnaire-help-3" name="help-type" value="educational">
+            <label for="questionnaire-help-3">Educational resources</label><br>
+            <input type="checkbox" id="questionnaire-help-4" name="help-type" value="emergency">
+            <label for="questionnaire-help-4">Emergency hotlines</label><br>
+            <input type="checkbox" id="questionnaire-help-5" name="help-type" value="anonymous-talk">
+            <label for="questionnaire-help-5">Just someone to talk to anonymously</label><br>
         </div>
-        <button class="next-btn" id="helpNextBtn">Next</button>
-        <button class="back-btn">Back</button>
+        <button class="next-btn" id="questionnaire-help-next-btn">Next</button>
+        <button class="back-btn" id="questionnaire-help-back-btn">Back</button>
      </div>
     </section>
 
@@ -270,17 +312,117 @@
         </div>
         <div class="questionnaire-content">
             <h5>What's your Gender</h5>
-            <input type="checkbox" id="gender1" name="gender" value="male">
-            <label for="gender1">Male</label><br>
-            <input type="checkbox" id="gender2" name="gender" value="female">
-            <label for="gender2">Female</label><br>
+            <input type="checkbox" id="questionnaire-gender-1" name="gender" value="male">
+            <label for="questionnaire-gender-1">Male</label><br>
+            <input type="checkbox" id="questionnaire-gender-2" name="gender" value="female">
+            <label for="questionnaire-gender-2">Female</label><br>
 
         </div>
-        <a href="userHero.html" class="next-btn" id="genderNextBtn">Next</a>
-        <button class="back-btn">Back</button>
+        <button class="next-btn" id="questionnaire-gender-next-btn">Next</button>
+        <button class="back-btn" id="questionnaire-gender-back-btn">Back</button>
      </div>
     </section>
 
     <script src="userflow.js"></script>
 </body>
 </html>
+
+<!-- Do not delete -->
+ <!-- <section id="EmailSection" class="notification-section ">
+     <div class="notification-container">
+        <div class="cancel-icon">
+            <img src="Landing page Assets/Cancel-icon.png" alt="Cancel-icon">
+            <!-- <i class="fas fa-times"></i>
+        </div>
+        <div class="notification-image">
+            <img src="Landing page Assets/Bookmark image.png" alt="Bookmark Image">
+        </div>
+        <div class="email-content">
+            <h5>Awesome</h5>
+            <p> You're ready to use SafeAnchor</p>
+        </div>
+        <button class="start-btn" id="notification-start-btn">Start</button>
+     </div>
+    </section> -->
+
+    <!-- <section class="form-section" id="thirdSection">
+
+        <div class="form-image">
+            <img src="Landing page Assets/image fix.png" alt="Sign In Image">
+        </div>
+
+
+        <div class="form-container1">
+
+        <div class="form-container2">
+        <h1>Create An Account</h1>
+        <p>Create an account to use <span class="emphasis">SafeAnchor</span></p>
+        
+        <form>
+            <label for="signup-username-username">Username</label><br>
+            <input type="text" id="signup-username-username" name="username" required><br>
+
+            <label for="signup-username-email">Email Address</label><br>
+            <input type="email" id="signup-username-email" name="email" required><br>
+
+            <label for="signup-username-phone">Phone Number</label><br>
+            <input type="tel" id="signup-username-phone" name="number" required><br>
+
+            <label for="signup-username-password">Password</label><br>
+            <input type="password" id="signup-username-password" name="password" required><br>
+
+            <label for="signup-username-confirm-password">Confirm Password</label><br>
+            <input type="password" id="signup-username-confirm-password" name="password" required><br><br>
+
+            <button class="sign-in-btn" id="signup-username-submit-btn">Sign Up</button><br>
+            <span class="sign-up">Already have an Account? <a href="#" class="sign-up-link" id="signup-username-signin-link">Sign in</a></span>
+        </form>
+
+     </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="form-section" id="secondSection">
+        
+        <div class="form-image">
+            <img src="Landing page Assets/image fix.png" alt="Sign In Image">
+        </div>
+        
+        
+        
+        <div class="form-container1">
+
+        <div class="form-container2">
+        <h1>Create An Account</h1>
+        <p>Create an account to use <span class="emphasis">SafeAnchor</span></p>
+        <button class="register-btn" id="signup-email-register-btn">Register With Username</button>
+        <div class="alternative">
+            <span class="line-through1"></span><span class="or">OR</span><span class="line-through2"></span>
+        </div>
+        <form>
+            <label for="signup-email-email">Email Address</label><br>
+            <input type="email" id="signup-email-email" name="email" ><br>
+
+            <label for="signup-email-firstname">First Name</label><br>
+            <input type="text" id="signup-email-firstname" name="firstname" ><br>
+
+            <label for="signup-email-lastname">Last Name</label><br>
+            <input type="text" id="signup-email-lastname" name="lastname" ><br>
+
+            <label for="signup-email-phone">Phone Number</label><br>
+            <input type="tel" id="signup-email-phone" name="number" ><br>
+
+            <label for="signup-email-password">Password</label><br>
+            <input type="password" id="signup-email-password" name="password" ><br>
+
+            <label for="signup-email-confirm-password">Confirm Password</label><br>
+            <input type="password" id="signup-email-confirm-password" name="password" ><br><br>
+
+            <button class="sign-in-btn" id="signup-email-submit-btn">Sign Up</button><br>
+            <span class="sign-up">Already have an Account? <a href="#" class="sign-up-link" id="signup-email-signin-link">Sign in</a></span>
+        </form>
+    
+     </div>
+        </div>
+    </section> -->
+    <!-- Do not delete -->
