@@ -13,11 +13,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
+  padding-top: 1rem;
   padding-bottom: 0.5rem;
   background-color: #F5F7FB;
   position: sticky;
   z-index: 1000;
+  width: 100%;
   top: 0; /* distance from top of viewport */
   height: fit-content; /* optional: shrink to content */
   border-bottom: 1px solid #3ACEFF;
@@ -25,6 +26,7 @@
 
 .topbar-logo img {
     margin-left: 2rem;
+    width: 12rem;
 }
 
 .topbar-search {
@@ -33,7 +35,6 @@
     width: 15rem;
     display: flex;
     outline: none;
-    background-color: #F3FAFF;
     align-items: center;
 }
 
@@ -43,7 +44,7 @@
 }
 
 .topbar-search input {
-  background: #F3FAFF;
+    background: #F3FAFF;
     padding: 0.5rem;
     width: 8rem;
     border: none;
@@ -76,8 +77,14 @@ body {
 .container {
   display: grid;
   grid-template-columns: 220px 1fr;
+  grid-template-areas: "sidebar main"; /* update */
   min-height: 100vh;
 }
+
+
+/* Assign grid areas */
+.sidebar { grid-area: sidebar; } /* update */
+.main-content { grid-area: main; }
 
 
 
@@ -117,7 +124,15 @@ body {
     font-size: 1rem;
 }
 
-.sidebar .menu .notifications,
+.sidebar ul li a:hover {
+    background: #fff;
+    /* padding: 0.3rem; */
+    border-radius: 10%;
+    font-weight: bold;
+    color: #3ACEFF;
+}
+
+/* .sidebar .menu .notifications, */
 .sidebar ul li:hover {
     background: #fff;
     padding: 0.3rem;
@@ -253,3 +268,91 @@ body {
   display: block;
 }
 
+
+
+
+
+/* Hamburger */
+#hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Overlay for mobile */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 999;
+}
+
+.overlay.active {
+  display: block;
+}
+
+
+
+
+/* ========== Responsive Media Queries ========== */
+@media (max-width: 991px) {
+  .container {
+    grid-template-columns: 220px 1fr;
+    width: 100%; 
+  }
+
+  .text {
+    margin: 0.5rem;
+  }
+
+  .rightbar {
+    width: 90%;
+    height: fit-content;    
+    border-top: 0.1rem solid #ddd;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+  }
+}
+
+/* Mobiles: stack all, sidebar becomes toggle menu */
+@media (max-width: 767px) {
+  #hamburger { display: block; 
+  margin-left: 1rem; }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Sidebar hidden by default */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -240px;
+    width: 220px;
+    height: 100%;
+    background: #F3FAFF;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+  .sidebar.active { left: 0; }
+
+  .topbar {
+    width: 195%;
+  }
+
+  .profile-section {
+    margin-right: 1rem;
+  }
+
+  .topbar-search {
+    margin-right: 4rem;
+    margin-left: 2rem;
+  }
+
+  .main-content {
+    margin-left: 2rem;
+    width: 170%;
+  }
+}

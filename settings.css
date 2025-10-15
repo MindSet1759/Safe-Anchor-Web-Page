@@ -27,6 +27,7 @@ a{
 
 .topbar-logo img {
     margin-left: 2rem;
+    width: 12rem;
 }
 
 .topbar-search {
@@ -79,8 +80,15 @@ body {
 .container {
   display: grid;
   grid-template-columns: 220px 1fr 300px;
+  grid-template-areas: "sidebar main rightbar"; /* update */
   min-height: 100vh;
 }
+
+
+/* Assign grid areas */
+.sidebar { grid-area: sidebar; } /* update */
+.main-content { grid-area: main; }
+.rightbar { grid-area: rightbar; }
 
 
 
@@ -120,7 +128,15 @@ body {
     font-size: 1rem;
 }
 
-/* .sidebar .menu .settings, */
+.sidebar ul li a:hover {
+    background: #fff;
+    /* padding: 0.3rem; */
+    border-radius: 10%;
+    font-weight: bold;
+    color: #3ACEFF;
+}
+
+.sidebar .menu .settings,
 .sidebar ul li:hover {
     background: #fff;
     padding: 0.3rem;
@@ -209,3 +225,96 @@ textarea {min-height:80px;}
 
 .links a {color:#007bff;text-decoration:none;margin-right:15px;}
 .links a:hover {text-decoration:underline;}
+
+
+
+
+
+/* Hamburger */
+#hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Overlay for mobile */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 999;
+}
+
+.overlay.active {
+  display: block;
+}
+
+
+
+
+/* ========== Responsive Media Queries ========== */
+@media (max-width: 991px) {
+  .container {
+    grid-template-columns: 220px 1fr; 
+    grid-template-areas:
+      "sidebar main"
+      "sidebar rightbar"; /* rightbar drops below main */
+  }
+
+  .text {
+    margin: 0.5rem;
+  }
+
+  .rightbar {
+    width: 90%;
+    height: fit-content;    
+    border-top: 0.1rem solid #ddd;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+  }
+}
+
+/* Mobiles: stack all, sidebar becomes toggle menu */
+@media (max-width: 767px) {
+  #hamburger { display: block; 
+  margin-left: 1rem; }
+
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "main"
+      "rightbar"; /* sidebar will slide in/out via hamburger */
+  }
+
+  /* Sidebar hidden by default */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -240px;
+    width: 220px;
+    height: 100%;
+    background: #F3FAFF;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+  .sidebar.active { left: 0; }
+
+  .topbar {
+    width: 195%;
+  } 
+
+  .main {
+    width: 100%;
+  }
+
+  .topbar-search {
+    margin-right: 5rem;
+    margin-left: 2rem;
+  }
+
+  .profile-section {
+    margin-left: 2rem;
+  }
+}

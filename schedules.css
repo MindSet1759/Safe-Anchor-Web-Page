@@ -17,7 +17,7 @@ a{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
+  padding-top: 1rem;
   padding-bottom: 0.5rem;
   background-color: #F5F7FB;
   position: sticky;
@@ -29,6 +29,7 @@ a{
 
 .topbar-logo img {
     margin-left: 2rem;
+    width: 12rem;
 }
 
 .topbar-search {
@@ -80,8 +81,15 @@ body {
 .container {
   display: grid;
   grid-template-columns: 220px 1fr;
+  grid-template-areas: "sidebar main rightbar"; /* update */
   min-height: 100vh;
 }
+
+
+/* Assign grid areas */
+.sidebar { grid-area: sidebar; } /* update */
+.main-content { grid-area: main; }
+.rightbar { grid-area: rightbar; }
 
 
 
@@ -121,13 +129,29 @@ body {
     font-size: 1rem;
 }
 
-/* .sidebar .menu .schedules, */
+.sidebar ul li a:hover {
+    background: #fff;
+    /* padding: 0.3rem; */
+    border-radius: 10%;
+    font-weight: bold;
+    color: #3ACEFF;
+}
+
+.sidebar .menu .schedules,
 .sidebar ul li:hover {
     background: #fff;
-    padding: 0.3rem;
+    /* padding: 0.3rem; */
     border-radius: 10%;
     font-weight: bold;
     color: #2a6efc;
+}
+
+.sidebar ul li:hover {
+    color: #2a6efc;
+    background: #fff;
+    /* padding: 0.3rem; */
+    border-radius: 10%;
+    font-weight: bold;    
 }
 
 
@@ -286,25 +310,27 @@ body {
 /* Details */
 .details {
   /* width: 50%; */
-  flex: 1;
+  /* flex: 1; */
   background: #fff;
   border-radius: 1.2rem;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
 }
 
 .details h4 {
-    margin-bottom: 30rem;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
     margin-left: 2rem;
     font-size: 1.2rem;
     color: #333;
 }
 
 .details-box {
-  /* width: 20%; */
+  padding: 0.5rem;
   text-align: center;
   color: #333;
+  margin-top: 2rem;
 }
 
 .details-box .icon {
@@ -316,4 +342,103 @@ body {
 
 
 
+
+/* Hamburger */
+#hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Overlay for mobile */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 999;
+}
+
+.overlay.active {
+  display: block;
+}
+
+
+
+
+/* ========== Responsive Media Queries ========== */
+@media (max-width: 991px) {
+  .container {
+    grid-template-columns: 220px 1fr; 
+    grid-template-areas:
+      "sidebar main"
+      "sidebar rightbar"; /* rightbar drops below main */
+  }
+
+  .text {
+    margin: 0.5rem;
+  }
+
+  .rightbar {
+    width: 90%;
+    height: fit-content;    
+    border-top: 0.1rem solid #ddd;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+  }
+}
+
+/* Mobiles: stack all, sidebar becomes toggle menu */
+@media (max-width: 880px) {
+  #hamburger { display: block; 
+  margin-left: 1rem; }
+
+  .container {
+    grid-template-columns: 1fr;    
+  }
+
+  /* Sidebar hidden by default */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -240px;
+    width: 220px;
+    height: 100%;
+    background: #F3FAFF;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+  .sidebar.active { left: 0; }
+
+  .topbar {
+    width: 180%;
+  }
+
+  .topbar-search {
+    margin-right: 5rem;
+    margin-left: 2rem;
+  }
+
+  .schedules {
+    width: 100%;
+    margin-left: 2rem;
+    margin-right: 3rem;
+  }
+
+  .schedule-container {
+    flex-direction: column;
+  }
+
+  .calendar {
+    width: 100%;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1.2rem;
+  }
+
+  .details-box {
+    margin-bottom: 5rem;
+  }
+}
 

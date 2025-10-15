@@ -11,7 +11,13 @@
 </head>
 <body>
      <header class="topbar">
-        <div class="topbar-logo"><img src="Landing page Assets/SafeAnchor Logo.svg" alt="SafeAnchor"></div>
+        <!-- Hamburger for mobile -->
+        <div id="hamburger">&#9776;</div>
+        <div class="topbar-logo">
+          <a href="home.html">
+            <img src="Landing page Assets/SafeAnchor Logo.svg" alt="SafeAnchor">
+          </a>
+        </div>
         
         <div class="topbar-search">
              <img src="Landing page Assets/search-icon.png" alt="icon" class="search-icon">
@@ -24,7 +30,7 @@
                 <a href="notifications.html" class="notification-icon"><img src="Landing page Assets/notify-icon.png" alt="Notifications"></a>
             </div>
             <div class="profile">
-                <img src="Landing page Assets/Avatar 1.jpg" alt="Dr. Jane Doe">
+                <a href="settings.html"><img src="Landing page Assets/Avatar 1.jpg" alt="Dr. Jane Doe"></a>
             </div>
         </div>
         
@@ -39,13 +45,11 @@
         <li class="patient"><a href="patient.html"><img src="Landing page Assets/Resources icon.png" alt="Patients">Patients</a></li>
         <li class="schedules"><a href="schedules.html"><img src="Landing page Assets/Guidance.png" alt="Schedules">Schedules</a></li>
         <li class="messages"><a href="messages.html"><img src="Landing page Assets/support icon.png" alt="Messages">Messages</a></li>
-        <li class="settings"><a href="settings.html"><img src="Landing page Assets/setting icon.png" alt="Settings">Settings</a></li>
+        <li class="settings"><a href="settings.html" style="color: #3ACEFF;"><img src="Landing page Assets/setting icon.png" alt="Settings">Settings</a></li>
         <li class="help"><a href="help.html"><img src="Landing page Assets/Help icon.png" alt="Help">Help</a></li>
       </ul>
       <div class="quick-exit">
-        <a href="expertflow.html">          
-          <p class="quick-exit-text"><img src="Landing page Assets/exit image.png" alt="Quick Exit"><a href="index(updated).html">Quick Exit</a> </p>
-        </a>
+        <p class="quick-exit-text"><img src="Landing page Assets/exit image.png" alt="Quick Exit"><a href="about:blank" target="_self" style="color: #585656; text-decoration: none;">Quick Exit</a></p>        
       </div>
     </aside>
 
