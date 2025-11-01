@@ -274,11 +274,15 @@ p{
 }
 
 
-.notification-content h5{
+.notification-container h5{
     color: #0B1A43;
     font-size: 21px;
+    margin-left: 9rem;
 }
 
+#verificationCode{
+    margin-left: 9rem;
+}
 
 .notification-content p{
     color: #585656;

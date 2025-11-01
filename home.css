@@ -528,7 +528,7 @@ td img.icon {
   top: 0; left: 0;
   width: 100%; height: 100%;
   background: rgba(0,0,0,0.4);
-  z-index: 999;
+  z-index: 1000;
 }
 
 .overlay.active {
@@ -566,10 +566,65 @@ td img.icon {
   margin-left: 1rem; }
 
   .container {
+    width: 200%;
     grid-template-columns: 1fr;
     grid-template-areas:
       "main"
       "rightbar"; /* sidebar will slide in/out via hamburger */
+  }
+
+  /* .illustration {
+    margin-left: 50rem;
+  } */
+
+  /* Sidebar hidden by default */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -240px;
+    width: 220px;
+    height: 100%;
+    background: #F3FAFF;
+    transition: left 0.3s ease;
+    z-index: 2000;
+  }
+  .sidebar.active { left: 0; }
+
+  .rightbar {
+    width: 90%;
+    height: fit-content;
+    margin-left: 2rem;
+    border-top: 0.1rem solid #ddd;
+    margin-top: 1rem;
+  }
+
+  .topbar {
+    width: 205%;
+  }
+
+  .topbar-search {
+    margin-right: 10rem;
+    margin-left: 0rem;
+    width: 30%;
+  }
+}
+
+
+/* Mobiles: stack all, sidebar becomes toggle menu */
+@media (max-width: 400px) {
+  #hamburger { display: block; 
+  margin-left: 1rem; }
+
+  .container {
+    width: 200%;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "main"
+      "rightbar"; /* sidebar will slide in/out via hamburger */
+  }
+
+  .illustration {
+    margin-left: 5rem;
   }
 
   /* Sidebar hidden by default */
@@ -600,5 +655,6 @@ td img.icon {
   .topbar-search {
     margin-right: 5rem;
     margin-left: 2rem;
+    width: 50%;
   }
 }

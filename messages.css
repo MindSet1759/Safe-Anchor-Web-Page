@@ -477,9 +477,9 @@ body {
 
   .container {
     grid-template-columns: 1fr;
-    /* grid-template-areas:
-      "main"
-      "rightbar"; */
+    grid-template-areas:
+      "main";
+    
   }
 
   /* Sidebar hidden by default */
@@ -511,14 +511,19 @@ body {
   .overlay.active { display: block; }
 
   .topbar-search {
-    margin-right: 5rem;
-    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-left: 0rem;
+    width: 40%;
+  }
+
+  .topbar-logo img {
+    margin-left: 0rem;
   }
 
 
   .chat-list {
     /* display: none; */
-    width: 12rem;
+    width: 100%;
     border-right: 1px solid #e6e6e6;
     background: #f3faff;
     overflow-y: auto;
@@ -526,13 +531,15 @@ body {
     margin-left: 1rem;
   }
 
-  .chat-section {
+  /* .chat-section {
     margin-left: 2rem;
-  }
+  } */
 
 
   .messages-container {
     flex-direction: column;
+    width: 150%;
+    margin-left: 4rem;
   }
 
   .chat-list {
